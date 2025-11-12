@@ -38,7 +38,7 @@ Text Domain: Logistcwr
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 
 :root{
-  --st-theme-color-one:#f68b21;
+  --st-theme-color-one:#6B9EDA;
   --st-theme-color-two:#003d4d;
   --st-theme-body-color:#525459;
   --st-theme-color-white:#fff;
@@ -253,10 +253,10 @@ Text Domain: Logistcwr
 
 .st__logo__overlay::before {
   position: absolute;
-  content: "";
+  #content: "";
   top: -25px;
   left: -44px;
-  background: #005f9f;
+  #background: #11114E;
   width: 26%;
   height: 122px;
   z-index: 1;
@@ -267,7 +267,7 @@ Text Domain: Logistcwr
   content: "";
   top: -25px;
   left: 22%;
-  background: #005f9f;
+  background: #11114E;
   width: 3%;
   height: 93px;
   z-index: 1;
@@ -275,12 +275,12 @@ Text Domain: Logistcwr
 }
 
 .st__offcanvas__area{
-  background: #005f9f!important;
+  background: #11114E!important;
 }
 
 @media (max-width: 1200px) {
   .style2.st-header-menu-area {
-    background: #005f9f!important;
+    background: #11114E!important;
   }
 }
 
@@ -291,7 +291,7 @@ Text Domain: Logistcwr
   }
 
   .st-header-menu-area.style2 .is-sticky {
-    background: #005f9f !important;
+    background: #11114E !important;
     padding: 33px 0;
   }
 }
@@ -301,8 +301,8 @@ Text Domain: Logistcwr
 .st-header-logo a img {
   position: relative;
   left: -75px;
-  max-width: 100%;
-  width: 125px;
+  max-width: 80%;
+  #width: 125px;
   height: 125px;
 }
 /* 02 Header Menu Area */
@@ -387,7 +387,7 @@ Text Domain: Logistcwr
   width: 72px;
   height: 72px;
   line-height: 72px;
-  background: #005f9f;
+  background: #11114E;
   text-align: center;
   color: var(--st-theme-color-white);
   font-size: 30px;
@@ -504,7 +504,7 @@ Text Domain: Logistcwr
   content: "";
   top: 0;
   right: 0;
-  background: #005f9f;
+  background: #11114E;
   width: 342px;
   height: 100%;
   z-index: 1;
@@ -662,7 +662,7 @@ button.st__btn {
   z-index: 1;
 }
 .st__btn:hover{
-  color: #005f9f;
+  color: #11114E;
 }
 .st__btn::before {
   position: absolute;
@@ -691,7 +691,7 @@ button.st__btn {
   color: var(--st-theme-color-white);
 }
 .st__btn:hover i{
-  color: #005f9f;
+  color: #11114E;
 }
 .owl-item.active .slider-content h5 {
   animation: .50s ease-in-out 0.5s normal none 1 running fadeInDown;
@@ -739,7 +739,7 @@ button.st__btn {
   -o-transition: .5s;
 }
 .st__slider__carousel .owl-nav div i:hover{
-  background: #005f9f;
+  background: #11114E;
 }
 /* Slider Style Two */
 .slider__style2.st__slider__carousel .owl-nav {
@@ -757,7 +757,7 @@ button.st__btn {
   height: 66px;
   line-height: 66px;
   border-radius: 0;
-  background: #005f9f;
+  background: #11114E;
   margin: 0 1px;
   font-size: 26px;
 }
@@ -773,7 +773,7 @@ button.st__btn {
   bottom: 39px;
   right: 295px;
   font-size: 22px;
-  color: #005f9f;
+  color: #11114E;
   z-index: 1;
   font-family: "Josefin Sans Roman";
   font-weight: 500;
@@ -781,7 +781,7 @@ button.st__btn {
 }
 /* 04. Feature Area */
 .st-feature-area {
-  background: #005f9f;
+  background: #11114E;
 }
 .st__feature__box {
   background: var(--st-theme-color-white);
@@ -868,7 +868,7 @@ button.st__btn {
   font-size: 22px;
 }
 .st__feature__carousel .owl-nav div i:hover{
-  background: #005f9f;
+  background: #11114E;
 }
 .st__feature__carousel .owl-next {
   position: absolute;
@@ -951,7 +951,7 @@ button.st__btn {
   content: "";
   top: 0;
   left: -39px;
-  background: #005f9f;
+  background: #11114E;
   height: 16px;
   width: 16px;
   transform: rotate(45deg);
@@ -1052,7 +1052,7 @@ button.st__btn {
   left: -12px;
   width: 30px;
   height: 100%;
-  background: #005f9f;
+  background: #11114E;
   transform: skew(22deg);
   transition: .5s;
   -webkit-transition: .5s;
@@ -1126,8 +1126,8 @@ button.st__btn {
 .about__list li {
   opacity: 0.949;
   font-size: 20px;
-  color: var(--st-theme-color-two);
-  font-weight: 500;
+  color: #525459;
+  font-weight: 300;
   margin-bottom: 15px;
   padding-left: 28px;
   position: relative;
@@ -1225,7 +1225,7 @@ button.st__btn {
   content: "";
   top: -16px;
   left: 20px;
-  background: #005f9f;
+  background: #11114E;
   height: 16px;
   width: 16px;
   transform: rotate(45deg);
@@ -1347,7 +1347,7 @@ button.st__btn {
 .st__service__btn a {
   display: inline-block;
   padding: 12px 29px;
-  background: #005f9f;
+  background: #11114E;
   color: var(--st-theme-color-white);
   font-size: 30px;
   position: relative;
@@ -1362,7 +1362,7 @@ button.st__btn {
   content: "";
   top: 27px;
   right: 87px;
-  background: #005f9f;
+  background: #11114E;
   width: 32px;
   height: 27px;
   z-index: 1;
@@ -1396,7 +1396,7 @@ button.st__btn {
   color: var(--st-theme-color-one);
 }
 .st-service-area.style2 .st__service__icon__two {
-  background: #005f9f;
+  background: #11114E;
   width: 90px;
   height: 100px;
   line-height: 90px;
@@ -1452,7 +1452,7 @@ button.st__btn {
   background: var(--st-theme-color-one);
 }
 .st__service__box__two:hover .st__service__btn a::before{
-  background: #005f9f;
+  background: #11114E;
 }
 .st__service__box__two:hover .st__service__btn a {
   background: var(--st-theme-color-one);
@@ -1470,7 +1470,7 @@ button.st__btn {
   left: 0;
   width: 100%;
   height: 0%;
-  background: #005f9f;
+  background: #11114E;
   z-index: -1;
   transition: .5s;
   -webkit-transition: .5s;
@@ -1660,7 +1660,7 @@ button.st__btn {
   font-size: 50px;
 }
 .st__contact__position {
-  background: #005f9f;
+  background: #11114E;
   padding: 81px 100px 35px;
 }
 .st__form__box {
@@ -1774,7 +1774,7 @@ button.st__btn {
   padding: 79px 132px 47px;
 }
 .st-book-appointment-area .st__btn::before {
-  background: #005f9f;
+  background: #11114E;
 }
 .st-book-appointment-area .st__btn:hover {
   color: var(--st-theme-color-white);
@@ -1810,7 +1810,7 @@ button.st__btn {
   margin-left: 0;
 }
 .st__book__info {
-  background: #005f9f;
+  background: #11114E;
   padding: 49px 36px 43px;
   position: relative;
   z-index: 1;
@@ -1822,7 +1822,7 @@ button.st__btn {
   left: 23%;
   width: 210px;
   height: 210px;
-  background:#005f9f;
+  background:#11114E;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1892,7 +1892,7 @@ button.st__btn {
   top: 20px;
   width: 35px;
   height: 35px;
-  background:#005f9f;
+  background:#11114E;
   text-align: center;
   line-height: 37px;
   border-radius: 5px;
@@ -2013,7 +2013,7 @@ button.st__btn {
   -o-transition: .5s;
 }
 .st__project__btn a:hover{
-  background: #005f9f;
+  background: #11114E;
 }
 .st__project__btn a i {
   display: block;
@@ -2026,7 +2026,7 @@ button.st__btn {
 }
 /* 11. Team Member */
 .st__team__box {
-  background: #005f9f;
+  background: #11114E;
   padding: 0 0 37px;
   border-radius: 280px 280px 0 0;
   overflow: hidden;
@@ -2087,7 +2087,7 @@ button.st__btn {
   -o-transition: .5s;
 }
 .st__team__social a:hover{
-  background: #005f9f;
+  background: #11114E;
   color: var(--st-theme-color-white);
 }
 /* 12. Pricing Area */
@@ -2130,7 +2130,7 @@ button.st__btn {
   right: 0;
   width: 0%;
   height: 1px;
-  background: #005f9f;
+  background: #11114E;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -2138,7 +2138,7 @@ button.st__btn {
   -o-transition: .5s;
 }
 .st__pricing__box:hover.st__pricing__box::after{
-  background: #005f9f;
+  background: #11114E;
   width: 100%;
   left: 0;
 }
@@ -2153,7 +2153,7 @@ button.st__btn {
 }
 .st-dollar {
   font-size: 28px;
-  color: #f68b21;
+  color: #6B9EDA;
   font-weight: 500;
   position: relative;
   top: -19px;
@@ -2161,7 +2161,7 @@ button.st__btn {
 }
 .st-month {
   font-size: 18px;
-  color: #f68b21;
+  color: #6B9EDA;
   font-weight: 500;
   position: relative;
   left: -31px;
@@ -2204,7 +2204,7 @@ button.st__btn {
 .st__pricing__btn a {
   display: inline-block;
   color: var(--st-theme-color-white);
-  background: #005f9f;
+  background: #11114E;
   padding: 12px 30px;
   font-size: 20px;
   font-weight: 500;
@@ -2239,7 +2239,7 @@ button.st__btn {
 }
 .st-call-do-action .st__btn2 {
   margin-right: 25px;
-  background: #005f9f;
+  background: #11114E;
 }
 .st-call-do-action .st__btn2::before {
   background: var(--st-theme-color-one);
@@ -2300,7 +2300,7 @@ button.st__btn {
   font-weight: 400;
 }
 .st-subscribe-area.style2 .st__subscribe__form input {
-  background: #005f9f;
+  background: #11114E;
   color: var(--st-theme-color-white);
 }
 .st-subscribe-area.style2 .st__subscribe__form input::placeholder{
@@ -2774,7 +2774,7 @@ button.st__btn {
 }
 .footer__scroll a {
   display: inline-block;
-  background: #005f9f;
+  background: #11114E;
   border-radius: 50%;
   width: 55px;
   height: 55px;
@@ -2901,7 +2901,7 @@ button.st__btn {
   padding: 60px 25px 61px;
 }
 .st__contact__info {
-  background: #005f9f;
+  background: #11114E;
   padding: 78px 36px 46px;
 }
 .st__contact__title h2 {
@@ -2925,7 +2925,7 @@ button.st__btn {
   line-height: 59px;
   height: 59px;
   text-align: center;
-  background: #005f9f;
+  background: #11114E;
   color: var(--st-theme-color-white);
   font-size: 22px;
   transition: .5s;
@@ -2993,7 +2993,7 @@ button.st__btn {
   left: 0;
   width: 125px;
   height: 1px;
-  background: #005f9f;
+  background: #11114E;
 }
 .st__contact__right {
   margin-left: 35px;
@@ -3067,7 +3067,7 @@ button.st__btn {
 .bar-inner {
   width: 100%;
   height: 19px;
-  background: #005f9f;
+  background: #11114E;
   border-radius: 0;
   position: relative;
   margin: -2px;
@@ -3189,7 +3189,7 @@ button.st__btn {
   -o-transition: .5s;
 }
 .blog__tags a:hover{
-  background: #005f9f;
+  background: #11114E;
   color: var(--st-theme-color-white);
 }
 .blog__details__meta__box {
@@ -3577,7 +3577,7 @@ button.st__btn {
   margin-bottom: 30px;
 }
 .service__Details__btn a:hover{
-  background: #005f9f;
+  background: #11114E;
 }
 
 
@@ -3627,7 +3627,7 @@ button.st__btn {
   flex-grow: 1;
 }
 .search-form-inline button {
-  background-color: #005f9f;
+  background-color: #11114E;
   border: none;
   color: white;
   padding: 5px 10px;
