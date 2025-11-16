@@ -287,7 +287,7 @@ Text Domain: Logistcwr
 @media (max-width: 1200px) {
   .is-sticky {
 
-    padding: 20px 0 !important;
+    padding: 1px 0 !important;
   }
 
   .st-header-menu-area.style2 .is-sticky {
@@ -1041,6 +1041,7 @@ button.st__btn {
   -ms-transition: .5s;
   -o-transition: .5s;
   z-index: 1;
+  color:#ffffff!important;
 }
 .st__btn2:hover {
   color: var(--st-theme-color-white);
@@ -1552,10 +1553,10 @@ button.st__btn {
   padding-top: 482px;
 }
 .st-testimonial-area.style2 .st__section__title h5::after {
-  background: var(--st-theme-color-white);
+  background: #11114E;
 }
 .st-testimonial-area.style2 .circle::after {
-  background: var(--st-theme-color-white);
+  background: #11114E;
 }
 /* 08. Appointment Area */
 .st-appointment-area {
@@ -3636,4 +3637,72 @@ button.st__btn {
 }
 
 
+
+li a{
+  color : #11114E!important;
+}
+@media (max-width: 768px) {
+    li a {
+        color: #ffffff !important; 
+    }
+
+     li a:hover {
+        color: #6B9EDA!important; 
+    }
+}
+.service_section{
+   color : #11114E!important;
+
+}
+
+.service_section:hover{
+   color : #6B9EDA!important;
+
+}
+
+.st-contact-content{
+    color : #11114E!important;
+}
+
+span{
+    color : #11114E!important;
+}
+
+.footer_style{
+  color:#ffffff!important;
+}
+.footer_style0{
+  color:#ffffff!important;
+}
+.footer_style:hover{
+  color:#6B9EDA!important;
+}
+
+.icon_mob{
+  color:#6B9EDA!important;
+}
+
+.icon_mob:hover{
+  color:#11114E!important;
+}
+
+/* ------ Desktop ------ */
+.head_img{
+    display: block;
+}
+
+.logo-mobile {
+    display: none;
+    height: 50px!important;
+}
+
+/* ------ Mobile ------ */
+@media (max-width: 768px) {
+    .head_img {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+    }
+}
 
