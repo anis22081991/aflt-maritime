@@ -3706,3 +3706,40 @@ span{
     }
 }
 
+/* Tablette */
+@media (min-width: 769px) and (max-width: 1200px) {
+    li a {
+        color: #ffffff !important; 
+    }
+
+    li a:hover {
+        color: #6B9EDA !important; 
+    }
+}
+/* ------ Tablette ------ */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .head_img {
+        display: none; /* tu peux changer selon ton besoin */
+    }
+    .logo-mobile {
+        display: block; /* idem, modifiable */
+    }
+}
+
+/* Desktop */
+.mobile-language {
+  display: none;
+}
+.desktop-language {
+  display: block;
+}
+
+/* Mobile / Tablette */
+@media (max-width: 1024px) {
+  .desktop-language {
+      display: none;
+  }
+  .mobile-language {
+      display: block;
+  }
+}
