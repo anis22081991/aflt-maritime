@@ -54,58 +54,7 @@
 
     <body>
 
-    <!-- pre loader area start -->
-    <!--<div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-
-                <div class="preloader__content text-center">
-                    <div class="preloader__logo">
-                        <img src="images/logo/aflt-logo.svg" alt="">
-                    </div>
-                    <div id="st-loading-bar" class="preloader__bar">
-                        <div id="st-loading-line" class="preloader__bar-inner"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- pre loader area end -->
-    <!--
-
-    <div class="st-header-top-area style2">
-        <div class="container container-largetwo">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="st-header-top-info">
-                        <ul>
-                            <li><a href="#"><i class="bi bi-geo-alt-fill"></i> Adresse : 05 Rue Hadj Pacha, Kouba 16000, Algeria</a></li>
-                            <li><a href="#"> <i class="bi bi-envelope"></i> Email  : contact@aflt-maritime.com </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="st-header-top-right" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-
-
-
-                        <div class="st-header-top-social" style="display: flex; align-items: center; gap: 10px;">
-                            <span>Suivez Nous :</span>
-                            <ul style="display: flex; gap: 5px; margin: 0;">
-                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>-->
-
+  
     <!-- Offcanvas area start -->
     <div class="st__offcanvas__area">
         <div class="offcanvas__wrapper">
@@ -124,12 +73,14 @@
                         </button>
                     </div>
                 </div>
+               
+
                 <div class="mobile-menu fix" style="color:#ffffff">
                     <span style="color:#ffffff!important">Téléphone : </span>
                         +213 (0) 23 78 63 74
                 </div>
                 <div class="offcanvas__social">
-                    <h4 class="offcanvas__title">Réseaux sociaux</h4>
+                    <h4 class="offcanvas__title" data-i18n="res_soc"></h4>
                     <ul class="header-top-socail-menu d-flex">
                         <li><a class="icon_mob" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
                         <li><a class="icon_mob" href="https://twitter.com/"><i class="bi bi-twitter"></i></a></li>
@@ -160,6 +111,14 @@
                         <div class="col-lg-10 col-md-6 col-sm-10">
                             <div class="st__menu__wrap">
                                 <div class="st__main__menu">
+                                    <div class="language-selector mobile-language" style="padding: 10px; text-align: right;">
+                                        <select id="languageSelectMobile" onchange="setLanguage(this.value)"
+                                            style="padding: 8px 12px; border-radius: 4px; border: 1px solid #ddd; cursor: pointer;">
+                                            <option value="fr">Fr</option>
+                                            <option value="en">En</option>
+                                            <option value="ar">ع</option>
+                                        </select>
+                                    </div>
                                     <nav class="main__menu" id="mobile-menu">
                                         <ul>
                                             <li><a href="#about" data-i18n="about"> </a></li>
@@ -167,9 +126,13 @@
                                             <li><a href="#distinations" data-i18n="destinations"> </a></li>
                                             <!--<li><a href="#tarifs"> Tarifs </a></li>-->
                                             <li><a href="#contact" data-i18n="contact" > </a></li>
+                                          
                                         </ul>
                                     </nav>
+                                    
+                                    
                                 </div>
+                               
 
                                 <div class="st__header__right">
                                     <div class="st-contact-meta">
@@ -1152,9 +1115,9 @@
                         <form id="nlForm" action="#" method="post">
 
                             <div class="st__subscribe__form">
-                                <input type="email" name="email" placeholder="Tapez votre e-mail">
+                                <input type="email" name="email" data-i18n-placeholder="tap_mail" >
                                 <input type="hidden" name="type" value="newsletter">
-                                <button type="submit"> S'abonner </button>
+                                <button type="submit" data-i18n="abonn"> </button>
                             </div>
                         </form>
 
@@ -1251,7 +1214,7 @@
     <div class="st-footer-area style2 pt-120 pb-100" style="background-image: url(images/footer/bg2.jpg);background-position: center center;background-size: cover;background-repeat: no-repeat;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 wow fadeInUpBig">
+                <div class="col-lg-4 col-md-6 wow fadeInUpBig">
                     <div class="st__footer__logo">
                         <a href="#"> <img src="images/logo/aflt-logo_foot.svg" alt="" style="width:50%"> </a>
                     </div>
@@ -1259,14 +1222,14 @@
                         <p>AFLT Maritime "Algeria Facility Logistics & Transport Maritime" .</p>
                     </div>
                     <div class="st__social__icon">
-                        <h2>Réseaux sociaux</h2>
+                        <h2 data-i18n="res_soc"></h2>
                         <a href="#"> <i class="bi bi-facebook"></i> </a>
                         <a href="#"> <i class="bi bi-twitter"></i> </a>
                         <a href="#"> <i class="bi bi-pinterest"></i> </a>
                         <a href="#"> <i class="bi bi-instagram"></i> </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUpBig">
+                <div class="col-lg-4 col-md-6 wow fadeInUpBig">
                     <div class="st__footer__title">
                         <h2 data-i18n="nos_rubriques"></h2>
                     </div>
@@ -1283,9 +1246,9 @@
 
 
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUpBig">
+                <div class="col-lg-4 col-md-6 wow fadeInUpBig">
                     <div class="st__footer__title">
-                        <h2> Contactez-nous </h2>
+                        <h2 data-i18n="contact"> </h2>
                     </div>
                 
                         <div class="st__footer__link">
@@ -1304,23 +1267,7 @@
                     
 
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUpBig">
-                    <div class="right__all__content">
-                        <div class="st__footer__title">
-                            <h2> Nos projets </h2>
-                        </div>
-                        <div class="st__footer__grid">
-                            <ul>
-                                <li><img src="images/footer/b1.png" alt="" style="width: 81px; height: 80px"></li>
-                                <li><img src="images/footer/b2.png" alt="" style="width: 81px; height: 80px"></li>
-                                <li><img src="images/footer/b3.png" alt="" style="width: 81px; height: 80px"></li>
-                                <li><img src="images/footer/b4.png" alt="" style="width: 81px; height: 80px"></li>
-                                <li><img src="images/footer/b5.png" alt="" style="width: 81px; height: 80px"></li>
-                                <li><img src="images/footer/b6.png" alt="" style="width: 81px; height: 80px"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -1330,16 +1277,15 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 wow fadeInUpBig">
                     <div class="st__footer__copyright text-left">
-                        <span class="footer_style0"> © Copyrights 2025 <a href="#"> AFLT Martitime </a> Tous droits réservés. </span>
+                        <span class="footer_style0" data-i18n="copyrights"> </span> <span><a href="#"> &nbsp;   AFLT Martitime &nbsp; </a></span><span><a data-i18n="droits_reserv" style="color:#ffffff"> </a></span>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 wow fadeInUpBig">
                     <div class="st__footer__copyright__link text-end">
                         <ul>
-                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalPlan">Plan du site</a></li>
-                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalMentions">Mentions légales</a></li>
-                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalLicense">License</a></li>
-                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalConditions">Conditions d'utilisation</a></li>
+                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalPlan" data-i18n="plan_site"></a></li>
+                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalMentions" data-i18n="ment_legal"></a></li>
+                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalConditions" data-i18n="cond_util"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1350,7 +1296,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Plan du site</h5>
+                        <h5 class="modal-title" data-i18n="plan_site"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -1389,7 +1335,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Mentions légales</h5>
+                        <h5 class="modal-title" data-i18n="ment_legal"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -1415,42 +1361,13 @@
             </div>
         </div>
 
-        <!-- License -->
-        <div class="modal fade" id="modalLicense" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">License</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <!-- Conditions d'utilisation -->
         <div class="modal fade" id="modalConditions" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Conditions d'utilisation</h5>
+                        <h5 class="modal-title"  data-i18n="cond_util"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
