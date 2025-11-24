@@ -60,7 +60,15 @@ const translations = {
     
     // Newsletter
     abonner_newsletters: "Abonnez-vous à notre newsletter",
-    nos_rubriques: "Nos rubriques"
+    nos_rubriques: "Nos rubriques",
+    droits_reserv: "Tous droits réservés.",
+    plan_site:"Plan du site",
+    cond_util:"Conditions d'utilisation",
+    ment_legal:"Mentions légales",
+    res_soc:"Réseaux sociaux",
+    abonn:"S'abonner",
+    copyrights:" © Copyrights 2025",
+    tap_mail:"Tapez votre e-mail",
   },
 
   en: {
@@ -119,7 +127,15 @@ const translations = {
     
     // Newsletter
     abonner_newsletters: "Subscribe to our Newsletter",
-    nos_rubriques: "Our Sections"
+    nos_rubriques: "Our Sections",
+    droits_reserv: "All rights reserved",
+    plan_site:"Sitemap",
+    cond_util:"Terms of use",
+    res_soc:"Social Networks",
+    abonn:"Subscribe",
+    copyrights:" © Copyrights 2025",
+    ment_legal:"Legal Notice",
+    tap_mail:"Enter your email",
   },
 
   ar: {
@@ -178,7 +194,16 @@ const translations = {
     
     // Newsletter
     abonner_newsletters: "اشترك في نشرتنا الإخبارية",
-    nos_rubriques: "أقسامنا"
+    nos_rubriques: "أقسامنا",
+    droits_reserv: "جميع الحقوق محفوظة",
+    plan_site:"خريطة الموقع",
+    cond_util:"شروط الاستخدام",
+    res_soc:"وسائل التواصل الاجتماعي",
+    abonn:"اشترك",
+    copyrights:"2025 حقوق النشر",
+    ment_legal:"الإشعارات القانونية",
+    tap_mail:"اكتب بريدك الإلكتروني",
+    
   }
 };
 
