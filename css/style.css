@@ -3735,7 +3735,7 @@ span{
 }
 
 /* Mobile / Tablette */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .desktop-language {
       display: none;
   }
@@ -3743,3 +3743,4 @@ span{
       display: block;
   }
 }
+
