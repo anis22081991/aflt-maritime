@@ -9,7 +9,7 @@ const translations = {
     about: "À propos",
     services: "Services",
     destinations: "Destinations",
-    contact: "Contactez-nous",
+    contact: "Contact",
     
     // Hero Section
     welcome: "Bienvenue",
@@ -363,5 +363,6 @@ window.addEventListener('load', () => {
   }
   updatePageLanguage();
 });
+
 
 
