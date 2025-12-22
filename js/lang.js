@@ -9,7 +9,7 @@ const translations = {
     about: "À propos",
     services: "Services",
     destinations: "Destinations",
-    contact: "Contacter Nous",
+    contact: "Contactez-nous",
     
     // Hero Section
     welcome: "Bienvenue",
@@ -20,7 +20,7 @@ const translations = {
     aflt_maritime: "AFLT Maritime",
     aflt_desc_1: "AFLT Maritime 'Algeria Facility Logistics & Transport Maritime' s'impose comme un acteur clé du renouveau maritime algérien. Spécialisée dans les services maritimes et logistiques, l'entreprise contribue activement à la relance du secteur à travers des partenariats stratégiques avec des compagnies internationales, dont GNV – Grandi Navi Veloci.",
     aflt_desc_2: "Fondée en 2017 à Alger, AFLT offre des solutions intégrées de logistique, de transit, de dédouanement, d'entreposage et de transport multimodal, garantissant fiabilité et performance sur l'ensemble du territoire national et à l'international. En tant qu'agent général, AFLT Maritime œuvre à renforcer les liaisons entre l'Algérie et l'Europe, au service de la mobilité, du commerce et du tourisme maritime, en phase avec la stratégie nationale de développement du transport maritime et d'ouverture économique.",
-    agent_gnv: "Agent général de GNV",
+    agent_gnv: "Agent général de GNV en Algérie",
     
     // Services Section
     our_services: "Nos Services",
@@ -37,7 +37,7 @@ const translations = {
     
     // Contact Section
     contactez_nous: "Contactez Nous",
-    assistance_24_7: "Assistance client 24h/24 et là toute heure du jour ou de la nuit",
+    assistance_24_7: "Assistance client 24h/7j",
     
     // Form Fields
     nom_prenom: "Nom et Prénom",
@@ -53,7 +53,7 @@ const translations = {
     
     // Destinations Section
     nos_destinations: "Nos Destinations",
-    destination_desc: "Voyagez avec confort depuis/vers l'Algérie avec GNV",
+    destination_desc: "Voyagez avec confort depuis et vers l'Algérie avec GNV",
     destination_title1: "Sète – Alger",
     destination_title2: "Sète – Béjaïa",
     destination_title_desc: "Ferries depuis/vers Sète",
@@ -87,7 +87,7 @@ const translations = {
     aflt_maritime: "AFLT Maritime",
     aflt_desc_1: "AFLT Maritime — Algeria Facility Logistics & Transport Maritime — stands as a key player in the revival of the Algerian maritime sector. Specializing in maritime and logistics services, the company actively contributes to the industry's recovery through strategic partnerships with international operators, including GNV – Grandi Navi Veloci.",
     aflt_desc_2: "Founded in 2017 in Algiers, AFLT provides integrated solutions in logistics, forwarding, customs clearance, warehousing, and multimodal transport, ensuring reliability and performance nationwide and internationally. As a general agent, AFLT Maritime works to strengthen connections between Algeria and Europe, supporting mobility, trade, and maritime tourism, in line with the national strategy for developing maritime transport and promoting economic openness.",
-    agent_gnv: "General Agent of GNV",
+    agent_gnv: "General Agent of GNV in Algeria",
     
     // Services Section
     our_services: "Our Services",
