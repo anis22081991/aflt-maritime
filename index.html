@@ -53,12 +53,6 @@
     </head>
 
     <body>
-     <iframe id="youtubePlayer"
-        data-src="https://www.youtube.com/embed/6HB6F3jzwhM?autoplay=1&mute=1"
-        src=""
-        allow="autoplay; encrypted-media"
-        allowfullscreen>
-</iframe>
 
   
     <!-- Offcanvas area start -->
@@ -602,12 +596,17 @@
         const youtubePlayer = document.getElementById('youtubePlayer');
 
         videoModal.addEventListener('show.bs.modal', function () {
-            youtubePlayer.src = "https://www.youtube.com/watch?v=6HB6F3jzwhM";
+            youtubePlayer.src = "https://www.youtube.com/embed/6HB6F3jzwhM";
         });
 
         videoModal.addEventListener('hidden.bs.modal', function () {
             youtubePlayer.src = "";
         });
+
+            window.addEventListener('load', function () {
+        const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+        modal.show();
+    });
     </script>
 
 
@@ -1537,32 +1536,6 @@
     <script src="js/theme.js"></script>
     <!-- FOOTER -->
     <script src="https://cdn.jsdelivr.net/npm/venobox@2.0.6/venobox/venobox.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-
-            const modalElement = document.getElementById('videoModal');
-            const iframe = document.getElementById('youtubePlayer');
-
-            if (!modalElement || !iframe) return;
-
-            const videoSrc = iframe.getAttribute('data-src') 
-                || "https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1";
-
-            const modal = new bootstrap.Modal(modalElement);
-
-            // Ouvrir automatiquement au démarrage
-            modal.show();
-
-            // Charger la vidéo
-            iframe.src = videoSrc;
-
-            // Arrêter la vidéo à la fermeture
-            modalElement.addEventListener('hidden.bs.modal', function () {
-                iframe.src = "";
-            });
-
-        });
-    </script>
 
 
     </body>
