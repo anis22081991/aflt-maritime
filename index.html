@@ -161,6 +161,202 @@
                                                     <button type="submit"><i class="bi bi-search"></i></button>
                                                 </form>
                                             </div>
+                                             &nbsp;&nbsp;
+                                         
+                                            <!-- Bouton pour ouvrir le modal Contact -->
+                                            <button id="contactBtn" class="btn btn-primary" style="background-color:#11114E ;">
+                                                <i class=""></i> Contact
+                                            </button>
+
+                                            <!-- Modal Contact -->
+                                            <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Contactez-nous</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                        </div>
+                                                        <style>
+                                                            .modal-backdrop {
+                                                                     position: relative!important;  
+                                                                }
+
+                                                        </style>
+                                                        <div class="modal-body">
+
+                                                            <!-- Début section contact -->
+                                                            <div class="st-book-appointment-area pt-50 pb-50 p-relative" id="contactModalSection">
+                                                                <div class="book__container container">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-lg-8">
+                                                                            <div class="st__contact__inner">
+                                                                                <div class="st__contact__position">
+                                                                                    <div class="st__section__title style2 mb-50 wow fadeInUp">
+                                                                                        <h5 style="color:#6B9EDA" data-i18n="contactez_nous"></h5>
+                                                                                        <h1 style="color:#11114E" data-i18n="assistance_24_7"></h1>
+                                                                                    </div>
+
+                                                                                    <form id="contactFormModal" action="{{route('contactus-store')}}" method="post" data-controller="InquiryContrller">
+
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-6 wow fadeInUp">
+                                                                                                <div class='st__form__box p-relative'>
+                                                                                                    <input type="text" name="name" data-i18n-placeholder="nom_prenom" required>
+                                                                                                    <i class="bi bi-person-fill"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-6 wow fadeInUp">
+                                                                                                <div class="st__form__box p-relative">
+                                                                                                    <input type="email" name="email" data-i18n-placeholder="email" required>
+                                                                                                    <i class="bi bi-envelope-open"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-6 wow fadeInUp">
+                                                                                                <div class="st__form__box p-relative">
+                                                                                                    <input type="text" name="phone_number" data-i18n-placeholder="telephone">
+                                                                                                    <i class="bi bi-phone"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-6 wow fadeInUp">
+                                                                                                <div class="st__form__box p-relative">
+                                                                                                    <input type="text" name="pays" data-i18n-placeholder="pays">
+                                                                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-12 wow fadeInUp">
+                                                                                                <div class="st__form__box p-relative">
+                                                                                                    <textarea name="message" rows="3" data-i18n-placeholder="message" style="background-color:#ffffff" required></textarea>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-12 wow fadeInUp mt-50">
+                                                                                                <div class="st__form__box">
+                                                                                                    <button class="st__btn" type="submit" data-i18n="envoyer">
+                                                                                                        <i class="bi bi-arrow-right"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                    <!-- Modal de succès -->
+                                                                                    <div class="modal fade" id="successModalModal" tabindex="-1" aria-labelledby="successModalLabelModal" aria-hidden="true">
+                                                                                        <div class="modal-dialog modal-dialog-centered">
+                                                                                            <div class="modal-content bg-success text-white">
+                                                                                                <div class="modal-header border-0">
+                                                                                                    <h5 class="modal-title" id="successModalLabelModal">Succès</h5>
+                                                                                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                                                                                                </div>
+                                                                                                <div class="modal-body">
+                                                                                                    Votre message a été envoyé avec succès.
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Toast container -->
+                                                                                    <div id="toastContainerModal" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055;"></div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-lg-3">
+                                                                            <div class='st__book__info'>
+                                                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+                                                                                <div class="contact-box">
+                                                                                    <!-- Nouvelle adresse ajoutée en premier -->
+                                                                                    <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port d'Alger, Alger</span></p>
+
+                                                                                    <!-- Adresse existante -->
+                                                                                    <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>
+                                                                                    <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
+
+                                                                                    <!-- Téléphone et mail -->
+                                                                                    <p><i class="fa-solid fa-phone"></i> +213 028 16 66 97</p>
+                                                                                    <p><i class="fa-solid fa-envelope"></i> contact@aflt-dz.com</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fin section contact -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Script pour ouvrir le modal -->
+                                            <script>
+                                            document.addEventListener('DOMContentLoaded', function() {
+                                                const contactBtn = document.getElementById('contactBtn');
+                                                const contactModalEl = document.getElementById('contactModal');
+                                                const modal = new bootstrap.Modal(contactModalEl);
+
+                                                contactBtn.addEventListener('click', function() {
+                                                    modal.show();
+                                                });
+
+                                                // Formulaire modal
+                                                const form = document.getElementById('contactFormModal');
+                                                const toastContainer = document.getElementById('toastContainerModal');
+
+                                                form.addEventListener('submit', async function (e) {
+                                                    e.preventDefault();
+                                                    const formData = new FormData(form);
+
+                                                    try {
+                                                        const response = await fetch(form.action, {
+                                                            method: 'POST',
+                                                            headers: {
+                                                                'X-CSRF-TOKEN': form.querySelector('input[name="_token"]').value
+                                                            },
+                                                            body: formData
+                                                        });
+
+                                                        const result = await response.json();
+
+                                                        if (response.ok) {
+                                                            showToast(result.message || 'Message envoyé avec succès.', 'success');
+                                                            form.reset();
+                                                        } else {
+                                                            let errorText = 'Erreur lors de l’envoi.';
+                                                            if (result.errors) {
+                                                                errorText = Object.values(result.errors).flat().join('<br>');
+                                                            }
+                                                            showToast(errorText, 'danger');
+                                                        }
+                                                    } catch (error) {
+                                                        showToast('Erreur réseau.', 'danger');
+                                                    }
+                                                });
+
+                                                function showToast(message, type = 'success') {
+                                                    if (type === 'success') {
+                                                        const modalBody = document.querySelector('#successModalModal .modal-body');
+                                                        modalBody.innerHTML = message;
+                                                        const successModal = new bootstrap.Modal(document.getElementById('successModalModal'));
+                                                        successModal.show();
+                                                    } else {
+                                                        const toastEl = document.createElement('div');
+                                                        toastEl.className = `toast align-items-center text-bg-${type} border-0 show`;
+                                                        toastEl.setAttribute('role', 'alert');
+                                                        toastEl.innerHTML = `
+                                                            <div class="d-flex">
+                                                                <div class="toast-body">${message}</div>
+                                                                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                                                            </div>`;
+                                                        toastContainer.appendChild(toastEl);
+                                                        setTimeout(() => toastEl.remove(), 5000);
+                                                    }
+                                                }
+                                            });
+                                            </script>
+
+                                            <!-- Bootstrap JS -->
+                                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
                                             &nbsp;&nbsp;
                                             <div class="st-contact-icon">
@@ -399,7 +595,7 @@
         });
     </script>
     <!-- ST About Area -->
-    <div class="st-about-area style2 pt-100 pb-100" id="about">
+    <div class="st-about-area style2 pt-50 pb-50" id="about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -463,7 +659,7 @@
     <!-- ST Service Area -->
     
 
-    <div class="st-service-area style2 pt-100" id="services">
+    <div class="st-service-area style2 pt-50 pb-50" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -541,7 +737,7 @@
         </div>
     </div>
  
-    <div class="st-appointment-area style2 pt-100 p-relative"
+    <div class="st-appointment-area style2 pt-50 pb-50 p-relative"
         style="background: url(images/appointment/bg.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
 
         <div class="container">
@@ -612,7 +808,7 @@
 
 
     <!-- ST Appointment Area -->
-    <div class="st-book-appointment-area pt-100 p-relative" id="contact">
+    <div class="st-book-appointment-area pt-50 pb-50 p-relative" id="contact">
         <div class="book__container container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
@@ -749,23 +945,19 @@
 
                 <div class="col-lg-3">
                     <div class='st__book__info'>
-                    <!-- <h4>Comment pouvons-nous vous aider ?</h4>-->
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
                         <div class="contact-box">
-                          <p>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span data-i18n="adress_1" style="color:#ffffff!important"></span>
-                            </p>
+                            <!-- Nouvelle adresse ajoutée en premier -->
+                            <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port d'Alger, Alger</span></p>
 
-                            <p>
-                                <i class="fa-solid fa-building"></i>
-                                <span data-i18n="adress_2" style="color:#ffffff!important"></span>
-                            </p>
+                            <!-- Adresse existante -->
+                            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
 
+                            <!-- Téléphone et mail -->
                             <p><i class="fa-solid fa-phone"></i> +213 028 16 66 97</p>
                             <p><i class="fa-solid fa-envelope"></i> contact@aflt-dz.com</p>
-                        </div>                    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -774,7 +966,7 @@
 
  
 
-    <section class="st-testimonial-area style2 pt-100 pb-100" id="distinations" style="background-color: #ffffff">
+    <section class="st-testimonial-area style2 pt-50 pb-50" id="distinations" style="background-color: #ffffff">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
@@ -1013,14 +1205,14 @@
             }
         });
     </script>
-    <div class="st-blog-area style2 pt-100 pb-100" id="news" style="background-color:#f3f3f9">
+    <div class="st-blog-area style2 pt-50 pb-50" id="news" style="background-color:#f3f3f9">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="st__section__title style2 mb-50 text-center wow fadeInUp">
                     <h5 style="color:#6B9EDA">News</h5>
                     <span class="circle"></span>
-                    <h1>Ce que les médias disent</h1>
+                    <h1>Revue de presse</h1>
                 </div>
             </div>
         </div>
@@ -1070,6 +1262,134 @@
                         </div>
                     </div>
                 </div>
+
+                 <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b4.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>GNV lance officiellement sa ligne maritime Sète – Béjaïa.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal4">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b5.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>La compagnie italienne GNV lance une ligne maritime Alger-Sète.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal5">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b6.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>Béjaïa-Sète (France) : la compagnie italienne GNV lance une ligne maritime directe.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal6">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 7 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b7.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>GNV inaugure une nouvelle ligne à Alger.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal7">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 8 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b8.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>GNV inaugure sa nouvelle ligne entre Béjaia et Sète.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal8">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 9 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b9.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>Inauguration d’un nouveau ferry, le GNV Virgo, à Palerme (Italie).</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal9">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide-10 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b10.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>L’Algérie est un carrefour stratégique pour le transport maritime méditerranéen grâce à des partenariats internationaux réussis.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal10">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide-11 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b11.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>Un géant italien flottant et respectueux de l’environnement bientôt dans les ports algériens.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal11">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide-12 -->
+                <div class="swiper-slide">
+                    <div class="st__blog__single__box wow fadeInUp">
+                        <div class="st__blog__thumb">
+                            <img src="images/blog/b12.jpg" alt="" style="height:300px">
+                           <!-- <div class="st__blog__date"><span style="font-size:12px">Décembre <br> 2025</span></div>-->
+                        </div>
+                        <div class="st__blog__content">
+                            <h3 style="font-size:16px!important"><a>GNV s’apprête à lancer des traversées maritimes entre l’Italie et l’Algérie.</a></h3>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal12">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+             
 
                
 
@@ -1143,6 +1463,264 @@
             </div>
         </div>
 
+        <!-- Modal 4 -->
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">GNV lance officiellement sa ligne maritime Sète – Béjaïa.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b4.jpg" class="img-fluid mb-3" alt="">
+                        <p> Après l’inauguration officielle de sa nouvelle ligne le 4 juin dernier à Alger, la compagnie maritime italienne Grandi Navi Veloci (GNV) franchit une nouvelle étape dans son implantation en Algérie. Ce lundi 16 juin 2025, elle a officiellement lancé ses activités sur la ligne Sète – Béjaïa, renforçant ainsi la connectivité maritime entre les deux rives de la Méditerranée.
+
+                            Dans un communiqué que les services de la wilaya de Béjaïa ont publié, ils ont confirmé l’annonce du lancement officiel de cette liaison. Le navire Excellent, en provenance du port de Sète, a accosté ce lundi au port de Béjaïa, marquant le coup d’envoi des opérations commerciales de GNV sur cette nouvelle route maritime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           <!-- Modal 5 -->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal5Label">La compagnie italienne GNV lance une ligne maritime Alger-Sète.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b5.jpg" class="img-fluid mb-3" alt="">
+                        <p> La compagnie italienne Grandi Navi Veloci (GNV) a inauguré, mercredi, sa ligne de transport maritime des voyageurs entre Alger et le port de Sète (France), à même de renforcer la dynamique du transport maritime entre les deux villes.
+
+                                La première traversée de la compagnie italienne sur cette ligne a eu lieu mercredi, son ferry «Excellent» ayant accosté au port d'Alger vers 15h00 avec à son bord 949 passagers, 653 véhicules et six motos, en provenance du port français de Sète.
+
+                                Les voyageurs, dont la plupart sont venus passer les fêtes de l'Aïd El-Adha avec leurs proches en Algérie, ont salué cette initiative, déclarant à cette occasion que cette ligne leur offre une plus grande flexibilité dans leurs déplacements entre l'Algérie et la France.
+
+                                A ce titre, la cérémonie officielle d'inauguration de cette ligne s'est déroulée à Alger à bord du ferry, à son arrivée au port d'Alger, en présence du Conseiller du président de la République, chargé des Organisations non gouvernementales (ONG) et des droits de l'Homme, Hamid Lounaouci, du Secrétaire général (SG) du ministère des Transports, Djamel Eddine Abdelghani Dridi, du président du Conseil du renouveau économique algérien (CREA), Kamel Moula, et de l'ambassadeur d'Italie en Algérie, Alberto Cutillo, ainsi que de responsables du secteur du transport maritime.
+
+                                A cet égard, le Secrétaire général du ministère des Transports s'est félicité de l'ouverture de cette ligne par la compagnie italienne GNV, en partenariat avec l'opérateur algérien AFLT Maritime, en vue de renforcer les services offerts à notre communauté nationale, fortement présente en Europe.
+
+                                Pour sa part, L'ambassadeur italien en Algérie s'est dit très satisfait du partenariat entre GNV et son partenaire algérien, espérant voir ce partenariat s'élargir à d'autres liaisons maritimes reliant entre des villes algériennes et italiennes.
+
+                                Une traversé hebdomadaire a été programmée entre Alger et le port français de Sète, selon les explications fournies par le PDG de l'entreprise AFLT Maritime, Hamid Batata.
+
+                                Une autre ligne sera également ouverte, le 9 juin, par la même compagnie reliant Béjaia à Sète, selon le même responsable qui a souligné qu'une réflexion est en cours en vue d'élargir le réseau de transport de GNV en Algérie pour inclure le port de Gênes.
+
+                                Le PDG de GNV a, quant à lui, affirmé que la compagnie italienne était prête à mettre à disposition son expertise en vue de renforcer le réseau de transport maritime en Algérie, au service de la communauté algérienne établie à l'étranger.
+
+                                APS
+
+                                Source
+                                APS
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           <!-- Modal 6 -->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal6Label">Béjaïa-Sète (France) : la compagnie italienne GNV lance une ligne maritime directe.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b6.jpg" class="img-fluid mb-3" alt="">
+                        <p> La compagnie italienne Grandi Navi Veloci (GNV) a inauguré ce lundi, sa nouvelle ligne maritime de transport de passagers reliant Béjaïa au port de Sète en France. Cette ligne vise à renforcer la mobilité maritime entre les deux villes.
+
+                                Le premier voyage de la compagnie sur cette liaison a eu lieu hier où le navire «Excellent», appartenant à GNV, a accosté au port de Béjaïa en provenance du port de Sète.
+
+                                La cérémonie d’inauguration officielle s’est tenue à bord du navire en présence de Kamel-Eddine Kerbouche, wali de Béjaïa, Djamel Eddine Abdelghani Dridi, secrétaire général du ministère des Transports, de cadres de la compagnie GNV, du PDG du groupe MSC, leader mondial dans le transport maritime de conteneurs, du directeur général de l’Entreprise portuaire de Béjaïa, du directeur des Douanes algériennes, du directeur des transports, du président de l’Assemblée populaire communale et de représentants de différents corps de sécurité spécialisés dans le transport maritime.
+
+                                A cette occasion, le SG du ministère des Transports a salué l’ouverture de cette ligne par la compagnie italienne GNV, en particulier en «raison de l’importante communauté algérienne vivant en Europe, à laquelle ce service offre de nouvelles facilités».
+
+                                Pour sa part, le wali a souligné dans son discours que l’inauguration de cette ligne maritime directe entre Béjaïa et Sète «répond à un besoin croissant de services de transport maritime efficaces et directs, notamment durant la saison estivale, qui enregistre un pic dans les déplacements de la communauté algérienne résidant en France et dans le reste de l’Europe».
+
+                                Cette nouvelle ligne ne représente pas seulement une facilitation du déplacement des personnes, mais s’inscrit également dans une vision globale visant à alléger la pression sur les autres grands ports algériens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modal 7 -->
+        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal7Label">GNV inaugure une nouvelle ligne à Alger.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b7.jpg" class="img-fluid mb-3" alt="">
+                        <p> GNV, la compagnie de ferries du Groupe MSC a inauguré ce mercredi 4 Juin 2025 à Alger la nouvelle ligne reliant les villes d’Alger et de Béjaïa au port français de Sète.
+
+                            Le début des opérations a été célébré au port d’Alger par un événement à bord de l’Excellent, le navire qui assurera les deux liaisons, réservé aux représentants institutionnels, aux parties prenantes et aux médias locaux, marquant l’entrée officielle de la compagnie sur le marché algérien après l’annonce faite en avril dernier.
+
+                            La nouvelle ligne de GNV assure deux liaisons hebdomadaires entre l’Algérie et la France: Alger Béjaïa Sète. Le navire Excellent a récemment été rénové à bord avec des solutions numériques avancées qui améliorent l’expérience de voyage avec des services conçus pour répondre spécifiquement aux besoins du marché algérien, y compris la cuisine halal, une salle de prière et des espaces dédiés aux families.
+
+                            Avec l’ouverture de ces nouvelles lignes, GNV renforce sa présence dans le bassin méditerranéen, élargit son offre de liaisons dédiées au Maghreb et consolide son rôle stratégique dans le secteur du transport maritime international.
+
+                            « Nous sommes particulièrement fiers d’inaugurer aujourd’hui cette nouvelle ligne entre l’Algérie et l’Europe, un projet qui est le résultat d’une décennie de travail dans lequel GNV a cru depuis le tout début et qul représente une grande étape de développement pour notre compagnie. GNV est l’armateur qui possède la flotte de ferries Ropax longue distance avec le plus grand nombre de lits disponibles dans le monde et qui est donc le mieux placé pour effectuer de tels voyages. En outre, nous pourrons mettre à profit le savoir-faire et l’expérience acquis en plus de 20 ans de relations internationales avec l’Afrique du Nord, et même si nous devrons certainement apprendre et intégrer les spécificités du marché algérien, ce n’est pas un obstacle car nous mettrons tout en œuvre pour le faire le mieux et le plus rapidement possible», a déclaré Matteo Catani, Directeur Général de GNV.
+
+                            «L’ouverture de ces lignes n’est pas seulement un élargissement de l’offre de GNV, mais aussi un signe concret de notre engagement à renforcer les liaisons en Méditerranée, en offrant des solutions de transport modernes et fiables», a-t-il ajouté.«Nous croyons fermement au potentiel de l’Algérie et nous sommes convaincus que nous pouvons contribuer à sa croissance non seulement en élargissant l’offre de transport, mais aussi en améliorant la qualité globale du service», a-t-il mis en exergue dans une déclaration à El Watan. 
+
+                            « Nous sommes très heureux et fiers d’accueillir cette cérémonie, qui marque le début d’une nouvelle ligne de liaison entre deux territoires importants. L’échange symbolique d’écussons entre la compagnie et les autorités concernées est un geste supplémentaire de respect mutuel et de coopération, exprimant notre engagement commun à construire et consolider des relations durables et fructueuses », a souligné de son côté le commandant de bord du bateau l’Excellent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+              <!-- Modal 8 -->
+        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal8Label">GNV inaugure sa nouvelle ligne entre Béjaia et Sète</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b8.jpg" class="img-fluid mb-3" alt="">
+                        <p>La compagnie maritime italienne Grandi Navi Veloci (GNV) a inauguré officiellement, ce lundi, sa nouvelle ligne maritime reliant le port algérien de Béjaïa à celui de Sète, dans le sud de la France.
+
+                                La cérémonie d’inauguration qui a coïncidé avec l’accostage du navire Excellent, transportant à son bord 257 passagers et 181 véhicules, s’est déroulée en présence de nombreux responsables dont Abdelghani Dridi, secrétaire général du ministère des Transports.
+
+                                A l’occasion, la compagnie a mis en avant les atouts de ce navire moderne, conçu pour les longues traversées et récemment rénové selon des standards technologiques avancés, répondant aux attentes spécifiques des voyageurs algériens.
+
+                                S’exprimant à l’occasion, le représentant de la compagnie, Franco Fabrizio, a souligné que cette inauguration intervient dans la continuité du lancement de la ligne Alger-Gênes, le 04 juin dernier. Il a également évoqué un projet d’une nouvelle ligne entre Bejaia et Gênes.
+
+                                Selon les détails fournis sur place, le navire Excellent, d’une longueur de plus de 200 mètres, peut accueillir jusqu’à 2 230 passagers et dispose de 450 cabines de différents niveaux de confort, deux restaurants, une salle de jeux, une zone shopping, et de nombreux services complémentaires destinés à répondre aux exigences croissantes de la clientèle.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal 9 -->
+        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal9Label">Inauguration d’un nouveau ferry, le GNV Virgo, à Palerme (Italie).</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b9.jpg" class="img-fluid mb-3" alt="">
+                        <p> Renvoi vers : <a href="https://www.youtube.com/watch?v=XxZoKubVijc"> https://www.youtube.com/watch?v=XxZoKubVijc</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modal 10 -->
+        <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal10Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal10Label">L’Algérie est un carrefour stratégique pour le transport maritime méditerranéen grâce à des partenariats internationaux réussis.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b9.jpg" class="img-fluid mb-3" alt="">
+                        <p> Algérie – Belady Info : L’Algérie s’est positionnée ces dernières années comme l’un des pôles émergents les plus importants dans le domaine du transport maritime dans le bassin méditerranéen, profitant de sa position géographique stratégique, de l’expansion de son marché intérieur et de l’accélération du rythme des réformes dans le secteur.
+                            La présence croissante d’opérateurs internationaux sur le marché national reflète ce changement, avec une amélioration du climat des affaires et une demande croissante pour les services de transport de passagers et de marchandises.
+
+                            Le marché maritime algérien est en croissance continue
+                            Sur la période de mars à juin 2025, la Société portuaire d’Algérie a enregistré le traitement de 2,414 millions de tonnes de fret, contre 2,011 millions de tonnes pour la même période en 2024, soit un taux de croissance de près de 20 %.
+
+                            Le trafic passagers a également connu une augmentation significative, le port d’Alger recevant plus de 79 000 passagers durant la même période, soit une augmentation d’environ 40 % par rapport à l’année précédente, ce qui reflète l’amélioration de l’approvisionnement maritime et la confiance croissante des citoyens, en particulier des membres de la communauté algérienne vivant à l’étranger.
+
+                            Partenariats de qualité qui favorisent l’intégration économique
+                            Dans ce contexte, les partenariats entre les opérateurs algériens et internationaux émergent comme un levier clé pour le développement du secteur. La collaboration entre GNV, l’un des principaux opérateurs de transport maritime en Méditerranée, et la société algérienne de services maritimes AFLT Maritime incarne cette tendance, car elle a permis de renforcer la connectivité maritime entre l’Algérie et l’Europe via des routes régulières desservant le trafic passagers et fret.
+
+                            Cette coopération a permis le lancement de la ligne Sit-Alger-Bejaia, qui est rapidement devenue l’un des principaux pôles maritimes entre les deux rives, répondant à la demande croissante pour cette liaison et contribuant à la revitalisation des échanges commerciaux et à la facilitation des mouvements de personnes.
+
+                            :AFLT Maritime
+                            Dans ce contexte, Humaid Battat, président et directeur général d’AFLT Maritime, a souligné que ce partenariat s’inscrit dans une vision stratégique à long terme visant à développer une offre maritime durable au service de l’économie nationale et améliorant la qualité des services destinés aux passagers et aux transporteurs.
+
+                            « L’Algérie a aujourd’hui un réel potentiel pour devenir une plateforme maritime régionale, grâce à sa situation géographique, à la taille de son marché et à ses investissements publics visant à moderniser les ports et à améliorer la gouvernance du secteur », a ajouté le même porte-parole.
+
+                            Le secteur maritime est au cœur de la vision économique nationale
+                            Ce mouvement s’inscrit dans les orientations de l’État algérien, qui place le transport maritime parmi ses priorités économiques, en tant que l’un des secteurs qui soutiennent la croissance et la diversification de l’activité économique. Les autorités publiques travaillent à accélérer le rythme de modernisation des infrastructures portuaires, à renforcer les capacités logistiques et à améliorer les conditions d’accueil, permettant de suivre l’augmentation continue du volume des échanges avec l’Europe.
+
+                            Ces efforts, associés à l’ouverture du marché à des opérateurs internationaux expérimentés, contribuent à l’introduction de normes d’exploitation plus modernes, à l’amélioration de la compétitivité des ports nationaux et à la qualité des services fournis.
+
+                            L’Algérie en tant qu’acteur clé en Méditerranée
+                            Avec l’augmentation de la demande et l’expansion de l’offre, l’Algérie cherche à consolider sa position d’acteur clé du système de transport maritime méditerranéen, capable de jouer le rôle de pont économique reliant l’Europe à l’Afrique du Nord. Cette piste confirme que le développement du secteur maritime n’est plus seulement une option technique, mais aussi un pari stratégique qui contribue à soutenir la croissance économique et à promouvoir l’intégration de l’Algérie dans l’espace méditerranéen.
+                            <br> <a href="https://bladi-info.dz/%d8%a7%d9%84%d8%ac%d8%b2%d8%a7%d8%a6%d8%b1-%d9%85%d8%ad%d9%88%d8%b1-%d8%a7%d8%b3%d8%aa%d8%b1%d8%a7%d8%aa%d9%8a%d8%ac%d9%8a-%d9%84%d9%84%d9%86%d9%82%d9%84-%d8%a7%d9%84%d8%a8%d8%ad%d8%b1%d9%8a-%d8%a7/" target="_blank"> Article Originale</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modal 11 -->
+        <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal11Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal11Label">Un géant italien flottant et respectueux de l’environnement bientôt dans les ports algériens</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b11.jpg" class="img-fluid mb-3" alt="">
+                        <p> La compagnie italienne de transport voyageurs GNV a dévoilé le dernier navire de sa flotte équipé de moteurs écologiques alimentés au gaz naturel liquéfié (GNL), qui visitera à l’avenir les ports algériens, d’autant plus que le transporteur italien continuera d’opérer des vols réguliers vers l’Algérie, en partant du sud de l’Europe, avec des préparatifs pour le lancement d’une ligne directe entre la mer d’Italie et un port algérien.
+                                Ce « nouveau bébé » est un ajout qualitatif à la flotte de transport maritime, car le navire mesure 218 mètres de long et 29,60 mètres de large, avec une vitesse allant jusqu’à 25 nœuds nautiques, et une charge utile de plus de 52 000 tonnes.
+
+                                Une ligne maritime directe avec l’Algérie en 2026. et des voyages toute l’année en Europe
+
+                                Le navire dispose de 420 cabines pouvant accueillir 1 785 passagers, en plus d’une capacité de chargement d’environ 2 700 mètres linéaires, permettant le transport de plus de 600 véhicules, ce qui le rend qualifié pour jouer un rôle clé dans l’amélioration de la connectivité maritime et le transport de passagers et de fret, notamment sur les lignes reliant l’Europe du Sud à la rive sud de la Méditerranée.
+                                Dans ce contexte, Matteo Catani, directeur général de la Compagnie Italienne de Transport Voyageurs, a expliqué dans un communiqué à « Al-Shorouk », au port de Palerme, capitale de la région de la Sicile, en marge de la cérémonie officielle de lancement du nouveau navire, nommé « VIRGO », que ce nouveau navire, inauguré, est le premier navire à fonctionner au gaz naturel liquéfié en Italie, soulignant qu’il s’agit du premier d’un ensemble complet de 8 navires, dont 5 équipés de moteurs alimentés au gaz naturel liquéfié. Pollution des émissions de gaz à des pourcentages bien plus faibles.
+                                En réponse à une question d'« El Shorouk » sur la question de savoir si ce navire effectuerait des voyages vers des ports algériens depuis l’Europe du Sud, le responsable de la société italienne a souligné que le nouveau navire commencera d’abord à opérer des trajets réguliers via la ligne Palermo-Gênes (Gênes), soulignant que les cinq navires qui rejoindront bientôt la flotte « GNV », tous équipés de moteurs GNL, renforceront à l’avenir le programme de la compagnie sur l’ensemble des lignes méditerranéennes desservies par « GNV », ce qui signifie que ce géant flottant italien amical Pour l’environnement, en plus de quatre autres qui seront inaugurés plus tard, il visitera à l’avenir des ports algériens dans le cadre du transport maritime de passagers entre l’Europe du Sud et l’Algérie.
+                                Matteo Cattani a exprimé sa satisfaction quant au lancement des vols GNV au cours de l’année écoulée entre le port français de Sat, Bejaia et Alger, notant que la société a constaté une croissance significative de la mobilité entre l’Algérie et l’Europe, soulignant qu’elle continuera à travailler dans cette direction.
+                                Matteo Cattani a révélé à Al-Shorouk que GNV est actuellement en pourparlers avec les autorités algériennes afin de maintenir le service entre l’Europe du Sud et l’Algérie tout au long de l’année à venir, c’est-à-dire 2026.
+                                « Nous espérons désormais obtenir les licences nécessaires des autorités algériennes pour commencer le processus de vente des billets en prévision de la période estivale à venir », a-t-il déclaré.
+                                Concernant une question adressée à Al-Shorouk concernant la possibilité de lancer des vols maritimes directs pour transporter des passagers entre l’Italie et un port algérien, ce qui était une demande urgente pour la communauté en Italie et dans d’autres pays voisins, Cattani a expliqué que ce projet avait été élaboré l’année dernière et que les efforts se poursuivront dans cette direction avec les autorités algériennes, afin d’envisager la possibilité de lancer cette ligne maritime directe entre l’Italie et l’Algérie.
+                                « Il est probable qu’elle soit basée dans la ville de Genève, et cela constitue les fondements du projet sur lequel nous avons travaillé l’année dernière, mais au final, il n’a pas été possible de se concrétiser en 2025 », a-t-il déclaré.
+                                Le responsable de la société italienne « GNV » a qualifié son activité en 2025 sur le marché algérien de « très bonne », notant que l’entreprise a pu relier le sud de l’Europe à l’Algérie grâce à un grand potentiel de croissance et de développement grâce à cette destination.
+                                À cet égard, Catani a expliqué que les chiffres de 2025 confirment vraiment que l’entreprise, grâce à ses services, a contribué à une croissance nette du marché du transport maritime pour les passagers, soulignant que « GNV » a obtenu une satisfaction et un taux de résonance très positifs auprès de ses clients algériens qui ont choisi de voyager via ses navires, soulignant que ce résultat pousse l’entreprise à travailler et à offrir mieux que ce qu’elle avait présenté lors de la saison précédente, c’est-à-dire en 2026.
+
+                                En
+                                réponse à une question sur les ambitions à moyen et long terme de l’entreprise algérienne, le président et directeur général d’AFLT Maritime, Hamid Batata, a souligné à El Shorouk que GNV souhaite en réalité développer progressivement la relation avec son partenaire local « AFLT Maritime » concernant la destination algérienne, notant que les deux parties ont lancé deux lignes depuis le sud de l’Europe Vers Alger et Béjaïa, et au cours de l’année suivante, le service sera lancé d’Italie vers l’Algérie, et les activités se développeront progressivement à travers le pays.
+                                Concernant le développement du trafic passagers, qui a enregistré une croissance de 20 % et les expéditions de fret de 25 % en 2025, ainsi que l’ampleur de son impact sur la stratégie commerciale de l’entreprise, le porte-parole a expliqué que ce qui importe pour l’entreprise est le grand intérêt et la passion des passagers via les vols GNV pour le service qui leur est offert, qu’il s’agisse des Algériens résidant dans le pays d’origine ou des membres de la diaspora.
+                                Selon ce même responsable, le pourcentage de satisfaction des clients et passagers envers les services de la société a atteint un pourcentage très, très élevé, ce qui prouve, selon lui, qu’il existe un service de qualité, de présence et d’engagement de la part de la société, ainsi qu’un respect des horaires de croisière, que ce soit pour les vols aller ou aller-retour.
+                                Le nouveau navire « GNV Virgo » a été inauguré lors d’une grande cérémonie au port de Palerme, en Italie, en présence de responsables de la société mère, la société italo-suisse « MSC », classée comme le plus grand groupe maritime au monde, ainsi que des pneus et des responsables de « GNV ».
+                                La cérémonie d’inauguration a également vu la présence du représentant exclusif de l’Algérie sur le marché national de GNV, le président et directeur général de l’AFLT Maritime, Hamid Batata, une initiative qui reflète la position de l’Algérie en tant que partenaire commercial et logistique important dans le bassin méditerranéen.
+                                 <br>
+                                <a href="https://www.echoroukonline.com/%D8%B9%D9%85%D9%84%D8%A7%D9%82-%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A-%D8%B9%D8%A7%D8%A6%D9%85-%D9%88%D8%B5%D8%AF%D9%8A%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%A6%D8%A9-%D8%A8%D9%85%D9%88%D8%A7%D9%86%D8%A6"> Article Originale</a>
+                                                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 12 -->
+        <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal12Label">GNV s’apprête à lancer des traversées maritimes entre l’Italie et l’Algérie.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/blog/b12.jpg" class="img-fluid mb-3" alt="">
+                        <p> Renvoi vers : <a href="https://www.youtube.com/watch?v=XxZoKubVijc"> https://www.youtube.com/watch?v=XxZoKubVijc</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         
 
     </div>
@@ -1150,8 +1728,8 @@
 
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 4,
+        spaceBetween: 45,
         loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -1328,7 +1906,7 @@
                         <p>AFLT Maritime "Algeria Facility Logistics & Transport Maritime" .</p>
                     </div>
                     <div class="st__social__icon">
-                        <h2 data-i18n="res_soc"></h2>
+                       
                         <a href="#"> <i class="bi bi-facebook"></i> </a>
                         <a href="#"> <i class="bi bi-twitter"></i> </a>
                         <a href="#"> <i class="bi bi-pinterest"></i> </a>
@@ -1344,7 +1922,7 @@
                     
                         <a href="#services" data-i18n="services"> </a>
                     
-                        <a href="#contact" data-i18n="contact">  </a>
+                      
                     
                         <a href="#distinations" data-i18n="destinations"> </a>
 
@@ -1360,6 +1938,13 @@
                     </div>
                 
                         <div class="st__footer__link">
+
+                             <a href="#">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span style="color:#ffffff!important">Port d'Alger, Alger</span>
+                            </a>
+
+
                             <a href="#">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <span data-i18n="adress_1" style="color:#ffffff!important"></span>
@@ -1369,6 +1954,7 @@
                                 <i class="fa-solid fa-building"></i>
                                 <span data-i18n="adress_2" style="color:#ffffff!important"></span>
                             </a>
+                           
                             <a href="#"><i class="fa-solid fa-phone"></i> +213 028 16 66 97</a>
                             <a href="#"><i class="fa-solid fa-envelope"></i> contact@aflt-dz.com</a>
                         </div>  
