@@ -9,7 +9,7 @@ const translations = {
     about: "À propos",
     services: "Services",
     destinations: "Destinations",
-    contact: "Contact",
+    contact: "Contactez-nous",
     
     // Hero Section
     welcome: "Bienvenue",
@@ -20,12 +20,12 @@ const translations = {
     aflt_maritime: "AFLT Maritime",
     aflt_desc_1: "AFLT Maritime 'Algeria Facility Logistics & Transport Maritime' s'impose comme un acteur clé du renouveau maritime algérien. Spécialisée dans les services maritimes et logistiques, l'entreprise contribue activement à la relance du secteur à travers des partenariats stratégiques avec des compagnies internationales, dont GNV – Grandi Navi Veloci.",
     aflt_desc_2: "Fondée en 2017 à Alger, AFLT offre des solutions intégrées de logistique, de transit, de dédouanement, d'entreposage et de transport multimodal, garantissant fiabilité et performance sur l'ensemble du territoire national et à l'international. En tant qu'agent général, AFLT Maritime œuvre à renforcer les liaisons entre l'Algérie et l'Europe, au service de la mobilité, du commerce et du tourisme maritime, en phase avec la stratégie nationale de développement du transport maritime et d'ouverture économique.",
-    agent_gnv: "Agent général de GNV en Algérie",
+    agent_gnv: "Agent général GNV en Algérie",
     
     // Services Section
     our_services: "Nos Services",
     logistic_transit_international: "Logistique & Transit International",
-    transport_multimodal: "Transport Multimodal",
+    transport_multimodal: "Transport multimodal",
     fret_maritime: "Fret maritime",
     
     // Booking Section
@@ -37,7 +37,7 @@ const translations = {
     
     // Contact Section
     contactez_nous: "Contactez Nous",
-    assistance_24_7: "Assistance client 24h/7j",
+    assistance_24_7: "Assistance client",
     
     // Form Fields
     nom_prenom: "Nom et Prénom",
@@ -92,7 +92,7 @@ const translations = {
     // Services Section
     our_services: "Our Services",
     logistic_transit_international: "International Logistics and Forwarding",
-    transport_multimodal: "Multimodal Transport",
+    transport_multimodal: "Multimodal transport",
     fret_maritime: "Sea Freight",
     
     // Booking Section
@@ -104,7 +104,7 @@ const translations = {
     
     // Contact Section
     contactez_nous: "Contact Us",
-    assistance_24_7: "24/7 Customer Support – Available anytime, day or night",
+    assistance_24_7: "Customer Support – Available anytime, day or night",
     
     // Form Fields
     nom_prenom: "First and Last Name",
@@ -363,6 +363,5 @@ window.addEventListener('load', () => {
   }
   updatePageLanguage();
 });
-
 
 
