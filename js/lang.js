@@ -19,7 +19,7 @@ const translations = {
     who_are_we: "Qui sommes-nous ?",
     aflt_maritime: "AFLT Maritime",
     aflt_desc_1: "AFLT Maritime 'Algeria Facility Logistics & Transport Maritime' s'impose comme un acteur clé du renouveau maritime algérien. Spécialisée dans les services maritimes et logistiques, l'entreprise contribue activement à la relance du secteur à travers des partenariats stratégiques avec des compagnies internationales, dont GNV – Grandi Navi Veloci.",
-    aflt_desc_2: "Fondée en 2017 à Alger, AFLT offre des solutions intégrées de logistique, de transit, de dédouanement, d'entreposage et de transport multimodal, garantissant fiabilité et performance sur l'ensemble du territoire national et à l'international. En tant qu'agent général, AFLT Maritime œuvre à renforcer les liaisons entre l'Algérie et l'Europe, au service de la mobilité, du commerce et du tourisme maritime, en phase avec la stratégie nationale de développement du transport maritime et d'ouverture économique.",
+    aflt_desc_2: "Fondée en 2017 à Alger, AFLT MARITIME offre des solutions intégrées de logistique, de transit, de dédouanement, d'entreposage et de transport multimodal, garantissant fiabilité et performance sur l'ensemble du territoire national et à l'international. En tant qu'agent général, AFLT Maritime œuvre à renforcer les liaisons entre l'Algérie et l'Europe, au service de la mobilité, du commerce et du tourisme maritime, en phase avec la stratégie nationale de développement du transport maritime et d'ouverture économique.",
     agent_gnv: "Agent général GNV en Algérie",
     
     // Services Section
@@ -32,7 +32,7 @@ const translations = {
     book_ticket: "Réserver votre billet",
     title_1: "Votre billet GNV,",
     title_2: "où que vous soyez !",
-    desc_1: "Passez dans nos bureaux à Alger, visitez nos 20 agences entre Alger et Béjaïa, ou réservez en ligne sur www.gnv.it",
+    desc_1: "Passez dans nos bureaux à Alger ou Béjaïa, visitez nos agences accréditées entre Alger et Béjaïa, ou réservez en ligne sur www.gnv.it",
     savoir_plus: "En savoir plus",
     
     // Contact Section
