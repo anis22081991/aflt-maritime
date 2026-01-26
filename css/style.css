@@ -1408,9 +1408,10 @@ button.st__btn {
   border-radius: 0px 0 50px 50px;
 }
 .st-service-area.style2 .st__service__content {
-  padding: 26px 0 60px 113px;
+  padding: 26px 0 60px 95px;
   bottom: 133px;
   border-left: none;
+  font-size:13px;
 }
 .st-service-area.style2 .st__service__thumb__two{
   overflow: hidden;
@@ -1550,7 +1551,7 @@ button.st__btn {
 /* Testimonial Style2 */
 .st-testimonial-area.style2 {
   background: var(--st-testi-bg);
-  padding-top: 482px;
+  /*padding-top: 482px;*/
 }
 .st-testimonial-area.style2 .st__section__title h5::after {
   background: #11114E;
@@ -3735,7 +3736,7 @@ span{
 }
 
 /* Mobile / Tablette */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .desktop-language {
       display: none;
   }
@@ -3744,3 +3745,31 @@ span{
   }
 }
 
+.ment_leg{
+  font-size:16px;
+}
+
+.slider-rect {
+    background: #11114ee0 !important;
+    padding: 3rem;
+    margin-left: 40px;
+    max-width: 600px;
+    max-height: max-content;
+        color: var(--st-theme-body-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    transition: .5s;
+    font-family: 'Lexend', sans-serif;
+}
+
+.slide_title{
+  line-height: 56px!important;
+  font-size: 50px!important;
+  font-weight: 600;
+
+  
+}
+.st-book-appointment-area{
+  padding-bottom: 400px!important;
+}
