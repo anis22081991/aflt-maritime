@@ -67,7 +67,7 @@ const translations = {
     ment_legal:"Mentions légales",
     res_soc:"Réseaux sociaux",
     abonn:"S'abonner",
-    copyrights:" © Copyrights 2025",
+    copyrights:" © Copyrights 2026",
     tap_mail:"Tapez votre e-mail",
   },
 
@@ -133,7 +133,7 @@ const translations = {
     cond_util:"Terms of use",
     res_soc:"Social Networks",
     abonn:"Subscribe",
-    copyrights:" © Copyrights 2025",
+    copyrights:" © Copyrights 2026",
     ment_legal:"Legal Notice",
     tap_mail:"Enter your email",
   },
@@ -200,7 +200,7 @@ const translations = {
     cond_util:"شروط الاستخدام",
     res_soc:"وسائل التواصل الاجتماعي",
     abonn:"اشترك",
-    copyrights:"2025 حقوق النشر",
+    copyrights:"2026 حقوق النشر",
     ment_legal:"الإشعارات القانونية",
     tap_mail:"اكتب بريدك الإلكتروني",
     
