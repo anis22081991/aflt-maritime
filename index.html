@@ -30,6 +30,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
         <!-- modernizr js -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -77,17 +82,45 @@
 
                 <div class="mobile-menu fix" style="color:#ffffff">
                     <span style="color:#ffffff!important">Téléphone : </span>
-                        +213 (0) 23 78 63 74
+                        +213 28 16 66 97 
                 </div>
                 <div class="offcanvas__social">
-                    <h4 class="offcanvas__title" data-i18n="res_soc"></h4>
-                    <ul class="header-top-socail-menu d-flex">
-                        <li><a class="icon_mob" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
-                        <li><a class="icon_mob" href="https://twitter.com/"><i class="bi bi-twitter"></i></a></li>
-                        <li><a class="icon_mob" href="https://www.pinterest.com/"><i class="bi bi-pinterest"></i></a></li>
-                        <li><a class="icon_mob" href="https://vimeo.com/"><i class="bi bi-vimeo"></i></a></li>
-                    </ul>
-                </div>
+                <h4 class="offcanvas__title" data-i18n="res_soc"></h4>
+                <ul class="header-top-socail-menu d-flex">
+                     <li>
+                        <a class="icon_mob" href="https://www.youtube.com/" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon_mob" href="https://www.facebook.com/" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                      <li>
+                        <a class="icon_mob" href="https://www.linkedin.com/" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                      <li>
+                        <a class="icon_mob" href="https://x.com/" aria-label="X (Twitter)">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon_mob" href="https://www.tiktok.com/" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon_mob" href="https://www.instagram.com/" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                  
+                </ul>
+            </div>
+
             </div>
         </div>
     </div>
@@ -269,11 +302,13 @@
 
                                                                                     <!-- Adresse existante -->
                                                                                     <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>
+                                                                                     <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span></p>
                                                                                     <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
+                                                                                    <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
 
                                                                                     <!-- Téléphone et mail -->
-                                                                                    <p><i class="fa-solid fa-phone"></i> +213 028 16 66 97</p>
-                                                                                    <p><i class="fa-solid fa-envelope"></i> contact@aflt-dz.com</p>
+                                                                                    <p><i class="fa-solid fa-phone"></i> +213 28 16 66 97 </p>
+                                                                                    <p><i class="fa-solid fa-envelope"></i> contact@aflt-maritime.com</p>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -364,7 +399,7 @@
                                             </div>
                                             <div class="st-contact-content">
                                                 <span data-i18n="telephone">Téléphone</span>
-                                                +213 (0) 23 78 63 74
+                                                +213 28 16 66 97 
                                             </div>
                                         </div>
                                     </div>
@@ -553,6 +588,21 @@
     <!-- JS Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894yeXkEcjCJ+zVJft1N7Zf4jXhP1N6Yo9Ev0z3KcqNchJSaWZepVZtPYffO2JoI4X3d1Z4z72lgBaU9NPI1ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-kVXgYCn8W+RUvOGtCK9GCvJmEbXRxIPzYz6q0CL2q6HyZC3oZ0ydLnwWCIoKTNKlFZkWR7g8eRRaRgEVhUgDKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $(".st__slider__carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,      // 5 secondes entre chaque slide
+                autoplayHoverPause: true,   // pause au survol
+                nav: false,
+                dots: true,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn'
+            });
+        });
+        </script>
 
     <script>
         $(document).ready(function(){
@@ -2026,14 +2076,18 @@
                         <div class="contact-box">
                             <!-- Nouvelle adresse ajoutée en premier -->
                             <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port d'Alger, Alger</span></p>
+                          
 
                             <!-- Adresse existante -->
                             <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>
+                                 <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span></p>
                             <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
+                         
 
                             <!-- Téléphone et mail -->
-                            <p><i class="fa-solid fa-phone"></i> +213 028 16 66 97</p>
-                            <p><i class="fa-solid fa-envelope"></i> contact@aflt-dz.com</p>
+                            <p><i class="fa-solid fa-phone"></i> +213 28 16 66 97 | +213 770 145 00</p>
+                            <p><i class="fa-solid fa-envelope"></i> contact@aflt-maritime.com</p>
                         </div>
                     </div>
                 </div>
@@ -2158,14 +2212,27 @@
                         <a href="#"> <img src="images/logo/aflt-logo_foot.svg" alt="" style="width:50%"> </a>
                     </div>
                     <div class="st__footer__text">
-                        <p>AFLT Maritime "Algeria Facility Logistics & Transport Maritime" .</p>
+                        <p>AFLT MARITIME <br> <strong>Algeria Facility Logistics & Transport Maritime</strong></p>
                     </div>
                     <div class="st__social__icon">
-                       
-                        <a href="#"> <i class="bi bi-facebook"></i> </a>
-                        <a href="#"> <i class="bi bi-twitter"></i> </a>
-                        <a href="#"> <i class="bi bi-pinterest"></i> </a>
-                        <a href="#"> <i class="bi bi-instagram"></i> </a>
+                         <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                         <a href="#" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                         <a href="#" aria-label="X (Twitter)">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUpBig">
@@ -2198,6 +2265,7 @@
                                 <i class="fa-solid fa-location-dot"></i>
                                 <span style="color:#ffffff!important">Port d'Alger, Alger</span>
                             </a>
+                          
 
 
                             <a href="#">
@@ -2205,13 +2273,23 @@
                                 <span data-i18n="adress_1" style="color:#ffffff!important"></span>
                             </a>
 
+                              <a href="#">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span>
+                            </a>
+
                             <a href="#">
                                 <i class="fa-solid fa-building"></i>
                                 <span data-i18n="adress_2" style="color:#ffffff!important"></span>
                             </a>
+
+                             <a href="#">
+                                <i class="fa-solid fa-building"></i>
+                                <span style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span>
+                            </a>
                            
-                            <a href="#"><i class="fa-solid fa-phone"></i> +213 028 16 66 97</a>
-                            <a href="#"><i class="fa-solid fa-envelope"></i> contact@aflt-dz.com</a>
+                            <a href="#"><i class="fa-solid fa-phone"></i> +213 28 16 66 97 | +213 770 145 00</a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i> contact@aflt-maritime.com</a>
                         </div>  
                     
 
@@ -2306,7 +2384,7 @@
                            <strong>Siege social :</strong> Résidence Chaabani, RDC BT C08 Section 03 Lot 29, Val d'Hydra, Alger
                             <br>
                             <strong>Activité :  </strong> Transport maritime, transit, logistique internationale, assistance portuaire
-                            Agrément n°410 I <strong> Registre de commerce : </strong> 16/00-1122132 B17 I  <strong>A.I :</strong> 310733GG421 I 
+                            Agrément n°410 | <strong> Registre de commerce : </strong> 16/00-1122132 B17 |  <strong>A.I :</strong> 310733GG421 I 
                            <strong> NIF : </strong>  001731112213234 
                             <br>
                             <strong>Operations & Shipping Supervisor :</strong> Kamel BOUCHEBBAH - Tél. : +213 770 87 23 85
