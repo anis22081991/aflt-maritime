@@ -174,7 +174,7 @@
                                                 <select id="languageSelect" onchange="setLanguage(this.value)" style="padding: 8px 12px; border-radius: 4px; border: 1px solid #ddd; cursor: pointer;">
                                                     <option value="fr">Fr</option>
                                                     <option value="en">En</option>
-                                                   <option value="ar">ع</option>
+                                                    <option value="ar">ع</option>
                                                 </select>
                                             </div>
 
@@ -301,7 +301,7 @@
                                                                                     <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port d'Alger, Alger</span></p>
 
                                                                                     <!-- Adresse existante -->
-                                                                                    <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>
+                                                                                    <!--<p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>-->
                                                                                      <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span></p>
                                                                                     <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
                                                                                     <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
@@ -527,8 +527,12 @@
 							
 							<br><h1 class="slide_title">Algeria Facility Logistics 
 							<br>Transport Maritime</h1>
-							<br><h5 style="font-size:30px">Agent général de </h5> <img class="gnv-logo-float" style="width:20%;" src="images/logo/GNV.png" alt="AFLT">
-							
+                            <br>
+                           
+                            <div style="display:flex; align-items:center; gap:10px;padding-left:50px">
+                                <h5 style="font-size:30px; margin:0">Agent général</h5>
+                                <img class="gnv-logo-float" style="width:20%;" src="images/logo/GNV.png" alt="AFLT">
+                            </div>							
 							
 							<br><br><br><a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" data-i18n="offres_algeria">Offres Algérie</a>
 							
@@ -689,12 +693,16 @@
                         <div class="st__section__title wow fadeInUp">
                             <h5 data-i18n="who_are_we"></h5>
                             <h1 style="color:#11114E" data-i18n="aflt_maritime"></h1>
-                            <ul class="about__list" style="color:#525459!important"> 
-                                <li> <p data-i18n="aflt_desc_1"></a></p></li> 
-    </li>
-                                <li>  <p data-i18n="aflt_desc_2"></p>
-    </li>
-                            </ul>
+                         <ul class="about__list" style="color:#525459!important">
+                            <br> 
+                            <li>
+                                <p data-i18n="aflt_desc_1" style="text-align:justify;"></p>
+                            </li> 
+                            <br>
+                            <li>
+                                <p data-i18n="aflt_desc_2" style="text-align:justify;"></p>
+                            </li>
+                        </ul>
 
                         </div>
                     
@@ -703,6 +711,28 @@
             </div>
         </div>
     </div>
+    <style>
+        .about__list {
+            padding-left: 0;
+            margin: 0;
+            list-style-position: outside;
+        }
+
+        .about__list li {
+            margin-bottom: 10px;
+        }
+
+        .about__list p {
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .about__list p {
+                text-align: justify;
+                margin: 0;
+            }
+    </style>
 
     <!-- Modale Bootstrap pour la vidéo -->
     <div class="modal fade" id="aboutVideoModal" tabindex="-1" aria-hidden="true">
@@ -764,7 +794,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal1" data-i18n="logistic_transit_international" style="font-weight:500"></a>
                             </h3>
-                            <h6 style="font-size:13px ; color:#525459">Organisation et pilotage des opérations de transit international, incluant la gestion documentaire, la conformité réglementaire et la coordination des acteurs de la chaîne logistique, afin d’assurer des flux sécurisés, optimisés et maîtrisés.</h6>
+                            <p  style="font-size:15px ; color:#525459">Organisation et pilotage des opérations de transit international, incluant la gestion documentaire, la conformité réglementaire et la coordination des acteurs de la chaîne logistique, afin d’assurer des flux sécurisés, optimisés et maîtrisés.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -785,7 +815,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal2" data-i18n="transport_multimodal" style="font-weight:500"></a>
                             </h3>
-                            <h6  style="font-size:13px ; color:#525459">Conception et mise en œuvre de solutions de transport multimodal, combinant, selon les besoins, des modes complémentaires, avec une approche intégrée visant l’optimisation des coûts, des délais et des risques opérationnels.</h6>
+                            <p  style="font-size:15px ; color:#525459">Conception et mise en œuvre de solutions de transport multimodal, combinant, selon les besoins, des modes complémentaires, avec une approche intégrée visant l’optimisation des coûts, des délais et des risques opérationnels.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -806,7 +836,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal3" data-i18n="fret_maritime" style="font-weight:500"></a>
                             </h3>
-                            <h6  style="font-size:13px ; color:#525459">Gestion intégrée des opérations de fret maritime import-export, incluant la réservation d’espaces, la coordination portuaire, le suivi opérationnel des expéditions et la conformité aux réglementations douanières et internationales.</h6>
+                            <p  style="font-size:15px ; color:#525459">Gestion intégrée des opérations de fret maritime import-export, incluant la réservation d’espaces, la coordination portuaire, le suivi opérationnel des expéditions et la conformité aux réglementations douanières et internationales.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -828,7 +858,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal"   style="font-weight:500">Billetterie GNV</a>
                             </h3>
-                            <h6  style="font-size:13px ; color:#525459">En tant qu’agent général exclusif de GNV en Algérie, AFLT Maritime assure la billetterie et la coordination de réservations des passagers sur les lignes Sète - Béjaïa - Sète et Sète - Alger - Sète.</h6>
+                            <p  style="font-size:15px ; color:#525459">En tant qu’agent général exclusif de GNV en Algérie, AFLT Maritime assure la billetterie et la coordination de réservations des passagers sur les lignes Sète - Béjaïa - Sète et Sète - Alger - Sète.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -849,7 +879,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal"  style="font-weight:500">Manutention et logistique portuaire</a>
                             </h3>
-                            <h6  style="font-size:13px ; color:#525459">Prise en charge des opérations de chargement, de déchargement, d’arrimage et de débardage des marchandises, complétée par le suivi du fret et la gestion des formalités douanières nécessaires au transit portuaire.</h6>
+                            <p  style="font-size:15px ; color:#525459">Prise en charge des opérations de chargement, de déchargement, d’arrimage et de débardage des marchandises, complétée par le suivi du fret et la gestion des formalités douanières nécessaires au transit portuaire.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -870,7 +900,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal"   style="font-weight:500">Consignation et assistance portuaire</a>
                             </h3>
-                            <h6  style="font-size:13px ; color:#525459">Gestion administrative des escales navales auprès des autorités compétentes, assistance au capitaine et à l’équipage durant l’escale, et coordination des opérations portuaires conformément aux procédures de sécurité et aux exigences réglementaires en vigueur.</h6>
+                            <p  style="font-size:15px ; color:#525459">Gestion administrative des escales navales auprès des autorités compétentes, assistance au capitaine et à l’équipage durant l’escale, et coordination des opérations portuaires conformément aux procédures de sécurité et aux exigences réglementaires en vigueur.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -884,6 +914,59 @@
             </div>
         </div>
     </div>
+   <style>
+         /* espace interne pour éviter que le texte touche les bords */
+        .st__service__content {
+            padding: 20px;
+        }
+
+        /* texte propre et lisible */
+        .st__service__content p{
+            margin: 0;
+            line-height: 1.6;
+            text-align: left;     /* évite les grands espaces */
+        }
+
+        /* toutes les cards même hauteur automatiquement */
+        .st-service-area .col-lg-4.col-md-6{
+            display: flex;
+        }
+
+        .st__service__box__two{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+                /* chaque colonne devient flex */
+        .st-service-area .col-lg-4.col-md-6 {
+            display: flex;
+        }
+
+        /* la card remplit toute la hauteur disponible */
+        .st__service__box__two {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* le contenu s’étire naturellement */
+        .st__service__content {
+            flex-grow: 1;
+        }
+
+        /* texte normal sans espace forcé */
+        .st__service__content h6 {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        /* images uniformes */
+        .st__service__thumb__two img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+        }
+        </style>
  
     <div class="st-appointment-area style2 pt-50 pb-50 p-relative"
         style="background: url(images/appointment/bg.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
@@ -1854,9 +1937,8 @@
 					</div>
 					<div class="faq-answer">
                         <ol>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp; •	Carte bancaire CIB / Edahabia </li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp; •	Paiement en agence (espèces)</li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp; •	Paiement par virement ou versement en banque</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp; •	Paiement par chèque certifié ou espèce. </li>
+                           
                         </ol>					
                     </div>
 				</div>
@@ -2079,7 +2161,7 @@
                           
 
                             <!-- Adresse existante -->
-                            <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>
+                            <!--<p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>-->
                                  <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span></p>
                             <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
                             <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
@@ -2103,7 +2185,7 @@
                 <div class="col-lg-6">
                     <div class="st__subscribe__content">
                         <h3 style="color:#6B9EDA" data-i18n="abonner_newsletters"></h3>
-                        <span style="color: #ffffff!important" >Ut enim ad minim veniam, quis nostruyd</span>
+                        <span style="color: #ffffff!important" >Recevez nos dernières actualités</span>
 
                         <form id="nlForm" action="#" method="post">
 
@@ -2268,10 +2350,10 @@
                           
 
 
-                            <a href="#">
+                            <!--<a href="#">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <span data-i18n="adress_1" style="color:#ffffff!important"></span>
-                            </a>
+                            </a>-->
 
                               <a href="#">
                                 <i class="fa-solid fa-location-dot"></i>
@@ -2538,4 +2620,3 @@
 
     </body>
     </html>
-
