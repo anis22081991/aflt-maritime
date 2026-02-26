@@ -33,7 +33,7 @@ const translations = {
     title_1: "Votre billet GNV,",
     title_2: "où que vous soyez !",
     desc_1: "Passez dans nos bureaux à Alger ou Béjaïa, visitez nos agences accréditées entre Alger et Béjaïa, ou réservez en ligne sur www.gnv.it",
-    savoir_plus: "En savoir plus",
+    savoir_plus: "Besoin d’aide +",
     
     // Contact Section
     contactez_nous: "Contactez Nous",
