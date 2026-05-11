@@ -71,6 +71,7 @@ const translations = {
     destination_title2: "Sète - Béjaïa",
     destination_title3: "Troisième ville : prochainement",
     destination_title_desc: "Ferries depuis/vers Sète",
+    ser_pres:"Nos services et prestations",
 
     faq_title: "FAQ",
     faq_subtitle: "Questions fréquemment posées",
@@ -119,6 +120,7 @@ const translations = {
     success_title: "Success",
     success_message: "Your message has been sent successfully.",
     phone_label: "Phone",
+    ser_pres:"Our services and offerings",
 
     offres_algeria: "Algeria Offers",
     slide_1_title: "Algeria Facility Logistics<br>Maritime Transport",
@@ -221,6 +223,7 @@ const translations = {
     success_title: "تم بنجاح",
     success_message: "تم إرسال رسالتك بنجاح.",
     phone_label: "الهاتف",
+    ser_pres:"خدماتنا وعروضنا",
 
     offres_algeria: "عروض الجزائر",
     slide_1_title: "Algeria Facility Logistics<br>النقل البحري",
