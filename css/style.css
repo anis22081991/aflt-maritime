@@ -712,6 +712,7 @@ button.st__btn {
   -webkit-animation: .70s ease-in-out 0.7s normal none 1 running fadeInDown;
 }
 .owl-item.active .slider-content a {
+ 
   animation: .80s ease-in-out 1s normal none 1 running fadeInUp;
   animation-fill-mode: both;
   animation-name: fadeInUp;
@@ -3666,6 +3667,14 @@ li a{
 }
 
 span{
+    color : #ffffff!important;
+}
+
+.current{
+    color : #11114E!important;
+}
+
+.telephone{
     color : #11114E!important;
 }
 
