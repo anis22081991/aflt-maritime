@@ -142,7 +142,7 @@
                             </div>
                         </div>
                         <div class="col-lg-10 col-md-6 col-sm-10">
-                            <div class="st__menu__wrap">
+                            <div class="st__menu__wrap header-layout">
                                 <div class="st__main__menu">
                                     <div class="language-selector mobile-language" style="padding: 10px; text-align: right;">
                                         <select id="languageSelectMobile" onchange="setLanguage(this.value)"
@@ -158,7 +158,7 @@
                                             <li><a href="#services"  data-i18n="services">   </a></li>
                                             <li><a href="#distinations" data-i18n="destinations"> </a></li>
                                            <!-- <li><a href="#contact" data-i18n="contact" > </a></li>-->
-                                            <li><a href="#news"> News</a></li>
+                                            <li><a href="#news" data-i18n="news">News</a></li>
                                           
                                         </ul>
                                     </nav>
@@ -169,7 +169,7 @@
 
                                 <div class="st__header__right">
                                     <div class="st-contact-meta">
-                                        <div class="st__contact__meta__inner" style="position: relative;">
+                                        <div class="st__contact__meta__inner header-actions" style="position: relative;">
                                             <div class="language-selector" style="padding: 10px; text-align: right;">
                                                 <select id="languageSelect" onchange="setLanguage(this.value)" style="padding: 8px 12px; border-radius: 4px; border: 1px solid #ddd; cursor: pointer;">
                                                     <option value="fr">Fr</option>
@@ -183,22 +183,22 @@
 
 
                                             <!-- Icône loupe pour recherche -->
-                                            <a href="javascript:void(0)" id="search-toggle" class="btn btn-light text-dark lang-btn me-2" title="Recherche">
+                                            <a href="javascript:void(0)" id="search-toggle" class="btn btn-light text-dark lang-btn me-2" title="Recherche" data-i18n-title="search_title">
                                                 <i class="bi bi-search"></i>
                                             </a>
 
                                             <!-- Formulaire de recherche caché -->
                                             <div id="header-search-form" style="display:none;" class="search-popup">
                                                 <form action="#" method="get" class="search-form-inline">
-                                                    <input type="text" name="q" placeholder="Recherche..." />
+                                                    <input type="text" name="q" placeholder="Recherche..." data-i18n-placeholder="search_placeholder" />
                                                     <button type="submit"><i class="bi bi-search"></i></button>
                                                 </form>
                                             </div>
                                              &nbsp;&nbsp;
                                          
                                             <!-- Bouton pour ouvrir le modal Contact -->
-                                            <button id="contactBtn" class="btn btn-primary" style="background-color:#11114E ;">
-                                                <i class=""></i> Contact
+                                            <button id="contactBtn" class="btn btn-primary" style="background-color:#11114E ;" data-i18n="contact_button">
+                                                Contact
                                             </button>
 
                                             <!-- Modal Contact -->
@@ -206,7 +206,7 @@
                                                 <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title">Contactez-nous</h5>
+                                                            <h5 class="modal-title" data-i18n="contact_modal_title">Contactez-nous</h5>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                                         </div>
                                                         <style>
@@ -263,7 +263,8 @@
                                                                                             </div>
                                                                                             <div class="col-lg-12 wow fadeInUp mt-50">
                                                                                                 <div class="st__form__box">
-                                                                                                    <button class="st__btn" type="submit" data-i18n="envoyer">
+                                                                                                    <button class="st__btn" type="submit">
+                                                                                                        <span data-i18n="envoyer">Envoyer</span>
                                                                                                         <i class="bi bi-arrow-right"></i>
                                                                                                     </button>
                                                                                                 </div>
@@ -276,11 +277,11 @@
                                                                                         <div class="modal-dialog modal-dialog-centered">
                                                                                             <div class="modal-content bg-success text-white">
                                                                                                 <div class="modal-header border-0">
-                                                                                                    <h5 class="modal-title" id="successModalLabelModal">Succès</h5>
+                                                                                                    <h5 class="modal-title" id="successModalLabelModal" data-i18n="success_title">Succès</h5>
                                                                                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
                                                                                                 </div>
                                                                                                 <div class="modal-body">
-                                                                                                    Votre message a été envoyé avec succès.
+                                                                                                    <span data-i18n="success_message">Votre message a été envoyé avec succès.</span>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -298,13 +299,13 @@
                                                                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
                                                                                 <div class="contact-box">
                                                                                     <!-- Nouvelle adresse ajoutée en premier -->
-                                                                                    <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port d'Alger, Alger</span></p>
+                                                                                    <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important" data-i18n="port_alger">Port d'Alger, Alger</span></p>
 
                                                                                     <!-- Adresse existante -->
                                                                                     <!--<p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>-->
-                                                                                     <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span></p>
+                                                                                     <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important" data-i18n="port_bejaia">Port de Béjaïa, Béjaïa</span></p>
                                                                                     <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
-                                                                                    <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
+                                                                                    <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important" data-i18n="bejaia_agency">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
 
                                                                                     <!-- Téléphone et mail -->
                                                                                     <p><i class="fa-solid fa-phone"></i> +213 28 16 66 97 </p>
@@ -398,7 +399,7 @@
                                                 <a href="tel:+562015550124"> <i class="bi bi-telephone"></i> </a>
                                             </div>
                                             <div class="st-contact-content">
-                                                <span data-i18n="telephone">Téléphone</span>
+                                                <span data-i18n="telephone" class="telephone"->Téléphone</span>
                                                 +213 28 16 66 97 
                                             </div>
                                         </div>
@@ -525,16 +526,15 @@
 							
 							<img style="width:40%;" src="images/logo/logo-aflt-blanc.png" alt="AFLT">
 							
-							<br><h1 class="slide_title">Algeria Facility Logistics 
-							<br>Transport Maritime</h1>
+							<br><h1 class="slide_title" data-i18n-html="slide_1_title">Algeria Facility Logistics<br>Transport Maritime</h1>
                             <br>
                            
-                            <div style="display:flex; align-items:center; gap:10px;padding-left:50px">
-                                <h5 style="font-size:30px; margin:0">Agent général</h5>
+                            <div class="slide-badge-row" style="display:flex; align-items:center; gap:10px;padding-left:50px">
+                                <h5 style="font-size:30px; margin:0" data-i18n="slide_1_badge">Agent général</h5>
                                 <img class="gnv-logo-float" style="width:20%;" src="images/logo/GNV.png" alt="AFLT">
                             </div>							
 							
-							<br><br><br><a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" data-i18n="offres_algeria">Offres Algérie</a>
+							<br><br><br><a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" data-i18n="offres_algeria" style="width:50%">Offres Algérie</a>
 							
 					</div>
                     
@@ -548,14 +548,14 @@
             <div class="container">
                 <div class="slider-content">
                    <div class="slider-rect">
-							<br><h1 class="slide_title">Voyager avec confort <br> et ponctualité </h1>
+							<br><h1 class="slide_title" data-i18n-html="slide_2_title">Voyager avec confort <br> et ponctualité </h1>
 							
 							
 							
 							<br>
 							<br>
 							<br>
-							<a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" >Horaires et Réservations</a>
+							<a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" data-i18n="slide_2_cta" style="width:75%">Horaires et Réservations</a>
 					</div>
                 </div>
 
@@ -570,14 +570,14 @@
             <div class="container">
                 <div class="slider-content">
                    <div class="slider-rect">
-							<br><h1 class="slide_title">Billetterie GNV | Fret Maritime | <br> Port & Logistique | Multimodal & Transit </h1>
+							<br><h1 class="slide_title" data-i18n-html="slide_3_title">Billetterie GNV | Fret Maritime | <br> Port & Logistique | Multimodal & Transit </h1>
 							
 							
 							
 							<br>
 							<br>
 							<br>
-							<a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" >Notre brochure </a>
+							<a class="st__btn2" href="https://www.gnv.it/fr/offres-ferries/algeria" target="_blank" data-i18n="slide_3_cta" style="width:55%">Notre brochure</a>
 							
 						</div>
                 </div>
@@ -598,52 +598,12 @@
                 items: 1,
                 loop: true,
                 autoplay: true,
-                autoplayTimeout: 5000,      // 5 secondes entre chaque slide
-                autoplayHoverPause: true,   // pause au survol
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
                 nav: false,
                 dots: true,
-                animateOut: 'fadeOut',
-                animateIn: 'fadeIn'
-            });
-        });
-        </script>
-
-    <script>
-        $(document).ready(function(){
-            $(".st__slider__carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                nav: true,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 7000,
-                autoplayHoverPause: true
-            });
-        });
-    </script>
-
-
-
-
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- Initialisation -->
-    <script>
-        $(document).ready(function(){
-            $(".st__slider__carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                animateOut: 'fadeOut',
-                dots: true,
-                nav: false
+                animateOut: "fadeOut",
+                animateIn: "fadeIn"
             });
         });
     </script>
@@ -769,6 +729,8 @@
 
     <!-- ST Service Area -->
     
+<!-- ST Service Area -->
+    
 
     <div class="st-service-area style2 pt-50 pb-50" id="services">
         <div class="container">
@@ -794,7 +756,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal1" data-i18n="logistic_transit_international" style="font-weight:500"></a>
                             </h3>
-                            <p  style="font-size:15px ; color:#525459">Organisation et pilotage des opérations de transit international, incluant la gestion documentaire, la conformité réglementaire et la coordination des acteurs de la chaîne logistique, afin d’assurer des flux sécurisés, optimisés et maîtrisés.</p>
+                            <p  style="font-size:15px ; color:#525459" data-i18n="logistic_transit_international_desc">Organisation et pilotage des opérations de transit international, incluant la gestion documentaire, la conformité réglementaire et la coordination des acteurs de la chaîne logistique, afin d’assurer des flux sécurisés, optimisés et maîtrisés.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -815,7 +777,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal2" data-i18n="transport_multimodal" style="font-weight:500"></a>
                             </h3>
-                            <p  style="font-size:15px ; color:#525459">Conception et mise en œuvre de solutions de transport multimodal, combinant, selon les besoins, des modes complémentaires, avec une approche intégrée visant l’optimisation des coûts, des délais et des risques opérationnels.</p>
+                            <p  style="font-size:15px ; color:#525459" data-i18n="transport_multimodal_desc">Conception et mise en œuvre de solutions de transport multimodal, combinant, selon les besoins, des modes complémentaires, avec une approche intégrée visant l’optimisation des coûts, des délais et des risques opérationnels.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -836,7 +798,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal3" data-i18n="fret_maritime" style="font-weight:500"></a>
                             </h3>
-                            <p  style="font-size:15px ; color:#525459">Gestion intégrée des opérations de fret maritime import-export, incluant la réservation d’espaces, la coordination portuaire, le suivi opérationnel des expéditions et la conformité aux réglementations douanières et internationales.</p>
+                            <p  style="font-size:15px ; color:#525459" data-i18n="fret_maritime_desc">Gestion intégrée des opérations de fret maritime import-export, incluant la réservation d’espaces, la coordination portuaire, le suivi opérationnel des expéditions et la conformité aux réglementations douanières et internationales.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -858,7 +820,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal"   style="font-weight:500">Billetterie GNV</a>
                             </h3>
-                            <p  style="font-size:15px ; color:#525459">En tant qu’agent général exclusif de GNV en Algérie, AFLT Maritime assure la billetterie et la coordination de réservations des passagers sur les lignes Sète - Béjaïa - Sète et Sète - Alger - Sète.</p>
+                            <p  style="font-size:15px ; color:#525459" data-i18n="service_ticketing_desc">En tant qu’agent général exclusif de GNV en Algérie, AFLT Maritime assure la billetterie et la coordination de réservations des passagers sur les lignes Sète - Béjaïa - Sète et Sète - Alger - Sète.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -879,7 +841,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal"  style="font-weight:500">Manutention et logistique portuaire</a>
                             </h3>
-                            <p  style="font-size:15px ; color:#525459">Prise en charge des opérations de chargement, de déchargement, d’arrimage et de débardage des marchandises, complétée par le suivi du fret et la gestion des formalités douanières nécessaires au transit portuaire.</p>
+                            <p  style="font-size:15px ; color:#525459" data-i18n="service_port_logistics_desc">Prise en charge des opérations de chargement, de déchargement, d’arrimage et de débardage des marchandises, complétée par le suivi du fret et la gestion des formalités douanières nécessaires au transit portuaire.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -900,7 +862,7 @@
                             <h3>
                                 <a class="service_section" href="#" data-bs-toggle="modal"   style="font-weight:500">Consignation et assistance portuaire</a>
                             </h3>
-                            <p  style="font-size:15px ; color:#525459">Gestion administrative des escales navales auprès des autorités compétentes, assistance au capitaine et à l’équipage durant l’escale, et coordination des opérations portuaires conformément aux procédures de sécurité et aux exigences réglementaires en vigueur.</p>
+                            <p  style="font-size:15px ; color:#525459" data-i18n="service_port_assistance_desc">Gestion administrative des escales navales auprès des autorités compétentes, assistance au capitaine et à l’équipage durant l’escale, et coordination des opérations portuaires conformément aux procédures de sécurité et aux exigences réglementaires en vigueur.</p>
                             <div class="st__service__btn">
                             
                             </div>
@@ -915,7 +877,90 @@
         </div>
     </div>
    <style>
-         /* espace interne pour éviter que le texte touche les bords */
+        .header-layout {
+            gap: 24px;
+        }
+
+        .slider-content {
+            display: flex;
+            align-items: center;
+            min-height: 850px;
+        }
+
+        .slider-rect {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .header-layout .st__main__menu {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            left: 0 !important;
+            float: none;
+        }
+
+        .header-actions .language-selector,
+        .header-actions #contactBtn,
+        .header-actions #search-toggle {
+            flex-shrink: 0;
+        }
+
+        .booking-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .booking-copy {
+            max-width: 720px;
+        }
+
+        .booking-title-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .booking-title {
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .booking-copy p {
+            max-width: 680px;
+            line-height: 1.9;
+            margin-bottom: 28px;
+        }
+
+        .booking-copy .st__btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .st__section__title.style2 {
+            text-align: center;
+        }
+
+        .st__section__title.style2 h5,
+        .st__section__title.style2 h1 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-grid > div {
+            display: flex;
+        }
+
+        /* espace interne pour éviter que le texte touche les bords */
         .st__service__content {
             padding: 20px;
         }
@@ -966,20 +1011,185 @@
             height: 360px;
             object-fit: cover;
         }
+
+        html[dir="rtl"] .header-layout {
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        html[dir="rtl"] .header-layout .st__main__menu {
+            right: 0 !important;
+        }
+
+        html[dir="rtl"] .header-actions {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            right: 0 !important;
+        }
+
+        html[dir="rtl"] .main__menu ul {
+            justify-content: flex-start !important;
+        }
+
+        html[dir="rtl"] .slider-content {
+            justify-content: center;
+            text-align: center;
+        }
+
+        html[dir="rtl"] .slider-rect {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            max-width: 760px;
+            align-items: center;
+            text-align: center;
+        }
+
+        html[dir="rtl"] .slider-rect > img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        html[dir="rtl"] .slide-badge-row {
+            justify-content: center;
+            padding-right: 0 !important;
+        }
+
+        html[dir="rtl"] .booking-copy {
+            margin-left: 0;
+            margin-right: auto;
+            text-align: right;
+        }
+
+        html[dir="rtl"] .booking-title {
+            line-height: 1.4;
+        }
+
+        html[dir="rtl"] .booking-copy p {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: right !important;
+        }
+
+        html[dir="rtl"] .booking-copy .st__btn {
+            flex-direction: row-reverse;
+        }
+
+        html[dir="rtl"] .st__service__content {
+            text-align: center;
+            align-items: center;
+        }
+
+        html[dir="rtl"] .st__service__content h3 {
+            padding-right: 0;
+            padding-left: 0;
+            min-height: auto;
+            text-align: center;
+        }
+
+        html[dir="rtl"] .st__service__content p {
+            text-align: center !important;
+        }
+
+        html[dir="rtl"] .st__service__icon__two {
+            position: relative;
+            left: auto !important;
+            right: auto !important;
+            top: 0 !important;
+            margin: 0 auto 8px;
+        }
+
+        html[dir="rtl"] .service_section {
+            display: block;
+            text-align: center;
+        }
+
+        html[dir="rtl"] .booking-section .row {
+            flex-direction: row-reverse;
+        }
+
+        html[dir="rtl"] .style2.st-appointment-area .st__appointment__shape1 {
+            right: auto;
+            left: 8%;
+        }
+
+        html[dir="rtl"] .style2.st-appointment-area .st__appointment__shape1 img {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        html[dir="rtl"] .style2.st-appointment-area .st__appointment__video {
+            right: auto;
+            left: 15%;
+        }
+
+        html[dir="rtl"] #news .swiper {
+            direction: ltr;
+        }
+
+        html[dir="rtl"] #news .st__section__title,
+        html[dir="rtl"] #services .st__section__title,
+        html[dir="rtl"] #distinations .st__section__title,
+        html[dir="rtl"] .faq-section .st__section__title {
+            text-align: center !important;
+        }
+
+        @media (max-width: 1199px) {
+            .header-layout {
+                gap: 12px;
+            }
+
+            .header-actions {
+                gap: 8px;
+            }
+
+            .booking-copy {
+                max-width: 100%;
+            }
+
+            .st__service__content {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .booking-title-group {
+                gap: 0;
+            }
+
+            .booking-copy p {
+                max-width: 100%;
+            }
+
+            .slider-content {
+                min-height: 700px;
+            }
+
+            .st__service__content h3 {
+                padding-right: 0;
+                min-height: auto;
+            }
+
+            html[dir="rtl"] .st__service__content h3 {
+                padding-left: 0;
+            }
+        }
         </style>
  
-    <div class="st-appointment-area style2 pt-50 pb-50 p-relative"
+    <div class="st-appointment-area style2 pt-50 pb-50 p-relative booking-section"
         style="background: url(images/appointment/bg.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="st__section__title mb-50 wow fadeInUp">
+                    <div class="st__section__title mb-50 wow fadeInUp booking-copy">
                         <h5 class="text-white" data-i18n="book_ticket"></h5>
-                        <h1 class="text-white" data-i18n="title_1"> </h1>  <h1 class="text-white" data-i18n="title_2"></h1>
+                        <div class="booking-title-group">
+                            <h1 class="text-white booking-title" data-i18n="title_1"> </h1>
+                            <h1 class="text-white booking-title" data-i18n="title_2"></h1>
+                        </div>
                         <p class="text-white" data-i18n="desc_1"> </p> 
                 
-                        <a class="st__btn" href="#contact" data-i18n="savoir_plus"><i class="bi bi-arrow-right"></i> </a>
+                        <a class="st__btn" href="#contact"><span data-i18n="savoir_plus">Besoin d'aide</span><i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3"></div>
@@ -1043,7 +1253,7 @@
 
     <section class="st-testimonial-area style2 pt-50 pb-50" id="distinations" style="background-color: #ffffff">
         <div class="container">
-            <div class="row">
+            <div class="row services-grid">
                 <div class="col-lg-12 text-center mb-5">
                     <div class="st__section__title style2 wow fadeInUp">
                         <h5 style="color:#6B9EDA" data-i18n="nos_destinations"> </h5>
@@ -1081,7 +1291,7 @@
                     <div class="destination-card">
                         <img src="images/distination/3.jpg" alt="Béjaia" >
                         <div class="destination-info" style="background-color: #f5f4f9">
-                            <h3 style="color:#11114E">Troisième ville : Prochainement </h3>
+                            <h3 style="color:#11114E" data-i18n="destination_title3">Troisième ville : Prochainement</h3>
                             <p style="color:#6B9EDA" data-i18n="destination_title_desc"></p>
                         </div>
                     </div>
@@ -1133,102 +1343,6 @@
        
     </div>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                576: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2500, // temps entre chaque slide (en millisecondes)
-                disableOnInteraction: false, // continue même si l'utilisateur interagit avec le carrousel
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                576: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-    </script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- Swiper Init -->
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            }
-        });
-    </script>
     <style>
         .st__blog__content h2 a {
             font-size: 24px!important;
@@ -1256,50 +1370,15 @@
 
 
     </style>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- Swiper Init -->
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            }
-        });
-    </script>
   
     <div class="st-blog-area style2 pt-50 pb-50" id="news" style="background-color:#f3f3f9">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="st__section__title style2 mb-50 text-center wow fadeInUp">
-                    <h5 style="color:#6B9EDA">News</h5>
+                    <h5 style="color:#6B9EDA" data-i18n="news">News</h5>
                     <span class="circle"></span>
-                    <h1>Revue de presse</h1>
+                    <h1 data-i18n="press_review">Revue de presse</h1>
                 </div>
             </div>
         </div>
@@ -1317,7 +1396,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>GNV Virgo : le luxe et le confort dans le monde du transport maritime moderne.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal1">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal1" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1331,7 +1410,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>L’expansion stratégique en Méditerranée – l’Algérie, axe de croissance de GNV et pilier de la présence d’AFLT Maritime.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal2">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal2" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1345,7 +1424,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>La compagnie maritime italienne GNV présente son nouveau navire VIRGO.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal3">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal3" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1359,7 +1438,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>GNV lance officiellement sa ligne maritime Sète – Béjaïa.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal4">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal4" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1373,7 +1452,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>La compagnie italienne GNV lance une ligne maritime Alger-Sète.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal5">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal5" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1387,7 +1466,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>Béjaïa-Sète (France) : la compagnie italienne GNV lance une ligne maritime directe.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal6">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal6" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1401,7 +1480,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>GNV inaugure une nouvelle ligne à Alger.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal7">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal7" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1415,7 +1494,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>GNV inaugure sa nouvelle ligne entre Béjaia et Sète.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal8">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal8" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1429,7 +1508,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>Inauguration d’un nouveau ferry, le GNV Virgo, à Palerme (Italie).</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal9">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal9" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1443,7 +1522,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>L’Algérie est un carrefour stratégique pour le transport maritime méditerranéen grâce à des partenariats internationaux réussis.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal10">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal10" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1457,7 +1536,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>Un géant italien flottant et respectueux de l’environnement bientôt dans les ports algériens.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal11">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal11" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1471,7 +1550,7 @@
                         </div>
                         <div class="st__blog__content">
                             <h3 style="font-size:16px!important"><a>GNV s’apprête à lancer des traversées maritimes entre l’Italie et l’Algérie.</a></h3>
-                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal12">Lire Plus</a>
+                            <a class="st_blog_btn" href="#" data-bs-toggle="modal" data-bs-target="#modal12" data-i18n="read_more">Lire Plus</a>
                         </div>
                     </div>
                 </div>
@@ -1814,72 +1893,46 @@
 </div>
 
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 45,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            576: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            992: {
+    document.addEventListener("DOMContentLoaded", function () {
+        if (document.querySelector(".mySwiper")) {
+            new Swiper(".mySwiper", {
                 slidesPerView: 3,
-            },
-        },
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        }
     });
-
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 2500, // temps entre chaque slide (en millisecondes)
-            disableOnInteraction: false, // continue même si l'utilisateur interagit avec le carrousel
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            576: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-        },
-    }); </script>
+</script>
 
       <section class="faq-section pt-50 pb-50 p-relative">
 		
 		<br><div class="st__section__title style2 wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
-					<h5 style="color:#6B9EDA">FAQ</h5>
+					<h5 style="color:#6B9EDA" data-i18n="faq_title">FAQ</h5>
 					<span class="circle"></span>
-					<h1 style="color:#11114E">Frequently Asked Questions</h1>
+					<h1 style="color:#11114E" data-i18n="faq_subtitle">Frequently Asked Questions</h1>
 				</div><br><br><br>
 		
 		<div class="container">
@@ -1919,10 +1972,10 @@
 			<div class="faq-container">
 				<div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">Comment réserver un billet avec AFLT Maritime ?</span>
+						<span class="question-text" data-i18n="faq_q1">Comment réserver un billet avec AFLT Maritime ?</span>
 						<span class="icon">+</span>
 					</div>
-					<div class="faq-answer">
+					<div class="faq-answer" data-i18n-html="faq_a1">
 						 <ol>Vous pouvez réserver :
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;• Dans nos bureaux à Alger et à Bejaia et chez nos agences accréditées.</li>
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;• En ligne via notre site officiel www.gnv.it</li>
@@ -1932,10 +1985,10 @@
 				
 				<div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">Quels moyens de paiement sont acceptés ?</span>
+						<span class="question-text" data-i18n="faq_q2">Quels moyens de paiement sont acceptés ?</span>
 						<span class="icon">+</span>
 					</div>
-					<div class="faq-answer">
+					<div class="faq-answer" data-i18n-html="faq_a2">
                         <ol>
                             <li>&nbsp;&nbsp;&nbsp;&nbsp; •	Paiement par chèque certifié ou espèce. </li>
                            
@@ -1945,30 +1998,30 @@
 				
 				<div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">Quels sont les horaires et ports desservis ?</span>
+						<span class="question-text" data-i18n="faq_q3">Quels sont les horaires et ports desservis ?</span>
 						<span class="icon">+</span>
 					</div>
 					<div class="faq-answer">
-						<p>Nos lignes desservent le port de Sète et Alger / Bejaia. Les horaires et les ports desservis sont disponibles sur notre site dans la section Horaires et Réservations.</p>
+						<p data-i18n="faq_a3">Nos lignes desservent le port de Sète et Alger / Bejaia. Les horaires et les ports desservis sont disponibles sur notre site dans la section Horaires et Réservations.</p>
 					</div>
 				</div>
 
                 <div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">Quelles sont les politiques d’annulation et de remboursement ?</span>
+						<span class="question-text" data-i18n="faq_q4">Quelles sont les politiques d’annulation et de remboursement ?</span>
 						<span class="icon">+</span>
 					</div>
 					<div class="faq-answer">
-						<p> Les conditions varient selon le type de service (passager ou fret). Consultez notre page Conditions générales ou contactez notre service client pour des informations détaillées.</p>
+						<p data-i18n="faq_a4">Les conditions varient selon le type de service (passager ou fret). Consultez notre page Conditions générales ou contactez notre service client pour des informations détaillées.</p>
 					</div>
 				</div>
 
                 <div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">Le service de Débarquement Prioritaire est-il disponible ?</span>
+						<span class="question-text" data-i18n="faq_q5">Le service de Débarquement Prioritaire est-il disponible ?</span>
 						<span class="icon">+</span>
 					</div>
-					<div class="faq-answer">
+					<div class="faq-answer" data-i18n-html="faq_a5">
 						<ol> Oui, le service de Débarquement Prioritaire est disponible pour tous les passagers qui le réservent lors de l’achat de leur billet. Il permet de : 
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;•	Accéder à une zone dédiée à l’embarquement.</li>
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;•	Choisir de monter à bord immédiatement ou d’attendre dans votre véhicule.</li>
@@ -1980,10 +2033,10 @@
 
                 <div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">AFLT Maritime propose-t-elle des solutions pour les entreprises ?</span>
+						<span class="question-text" data-i18n="faq_q6">AFLT Maritime propose-t-elle des solutions pour les entreprises ?</span>
 						<span class="icon">+</span>
 					</div>
-					<div class="faq-answer">
+					<div class="faq-answer" data-i18n-html="faq_a6">
                         <ol>
                             Oui. Nous proposons des services personnalisés de transport et de logistique pour les entreprises, incluant :
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;•	Fret Maritime pour le transport de marchandises.</li>
@@ -1997,10 +2050,10 @@
 
                 <div class="faq-item">
 					<div class="faq-question">
-						<span class="question-text">Comment devenir une agence accréditée AFLT Maritime / GNV ?</span>
+						<span class="question-text" data-i18n="faq_q7">Comment devenir une agence accréditée AFLT Maritime / GNV ?</span>
 						<span class="icon">+</span>
 					</div>
-					<div class="faq-answer">
+					<div class="faq-answer" data-i18n-html="faq_a7">
 						 <ol> 
                             Pour devenir une agence accréditée AFLT Maritime / GNV, vous devez remplir certains critères de conformité et de capacité commerciale.
                             <br>
@@ -2063,7 +2116,7 @@
                                     </div>
                                     <div class="col-lg-12 wow fadeInUp mt-50">
                                         <div class="st__form__box">
-                                            <button class="st__btn" type="submit" data-i18n="envoyer"> <i class="bi bi-arrow-right"></i> </button>
+                                            <button class="st__btn" type="submit"><span data-i18n="envoyer">Envoyer</span> <i class="bi bi-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -2157,14 +2210,14 @@
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
                         <div class="contact-box">
                             <!-- Nouvelle adresse ajoutée en premier -->
-                            <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port d'Alger, Alger</span></p>
+                            <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important" data-i18n="port_alger">Port d'Alger, Alger</span></p>
                           
 
                             <!-- Adresse existante -->
                             <!--<p><i class="fa-solid fa-location-dot"></i> <span data-i18n="adress_1" style="color:#ffffff!important">Adresse centrale</span></p>-->
-                                 <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span></p>
+                                 <p><i class="fa-solid fa-location-dot"></i> <span style="color:#ffffff!important" data-i18n="port_bejaia">Port de Béjaïa, Béjaïa</span></p>
                             <p><i class="fa-solid fa-building"></i> <span data-i18n="adress_2" style="color:#ffffff!important">Alger, Algérie</span></p>
-                            <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span  style="color:#ffffff!important" data-i18n="bejaia_agency">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span></p>
                          
 
                             <!-- Téléphone et mail -->
@@ -2185,7 +2238,7 @@
                 <div class="col-lg-6">
                     <div class="st__subscribe__content">
                         <h3 style="color:#6B9EDA" data-i18n="abonner_newsletters"></h3>
-                        <span style="color: #ffffff!important" >Recevez nos dernières actualités</span>
+                        <span style="color: #ffffff!important" data-i18n="newsletter_subtext">Recevez nos dernières actualités</span>
 
                         <form id="nlForm" action="#" method="post">
 
@@ -2200,11 +2253,11 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content bg-success text-white">
                                     <div class="modal-header border-0">
-                                        <h5 class="modal-title" id="successModalLabel">Succès</h5>
+                                        <h5 class="modal-title" id="successModalLabel" data-i18n="success_title">Succès</h5>
                                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
                                     </div>
                                  <div class="modal-body">
-                                        Enregistrement avec succes!
+                                        <span data-i18n="success_message">Enregistrement avec succes!</span>
                                     </div>
                                 </div>
                             </div>
@@ -2330,7 +2383,7 @@
                     
                         <a href="#distinations" data-i18n="destinations"> </a>
 
-                        <a href="#news"> News</a>
+                        <a href="#news" data-i18n="news">News</a>
                     <!--<a href="#tarifs"> Tarifs, Offres & Promotions  </a>--> 
                     </div>
 
@@ -2345,7 +2398,7 @@
 
                              <a href="#">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <span style="color:#ffffff!important">Port d'Alger, Alger</span>
+                                <span style="color:#ffffff!important" data-i18n="port_alger">Port d'Alger, Alger</span>
                             </a>
                           
 
@@ -2357,7 +2410,7 @@
 
                               <a href="#">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <span style="color:#ffffff!important">Port de Béjaïa, Béjaïa</span>
+                                <span style="color:#ffffff!important" data-i18n="port_bejaia">Port de Béjaïa, Béjaïa</span>
                             </a>
 
                             <a href="#">
@@ -2367,7 +2420,7 @@
 
                              <a href="#">
                                 <i class="fa-solid fa-building"></i>
-                                <span style="color:#ffffff!important">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span>
+                                <span style="color:#ffffff!important" data-i18n="bejaia_agency">Agence Béjaia : 12, avenue Ben Boulaid- Bejaia</span>
                             </a>
                            
                             <a href="#"><i class="fa-solid fa-phone"></i> +213 28 16 66 97 | +213 770 145 00</a>
@@ -2392,10 +2445,10 @@
                 <div class="col-lg-6 col-md-12 wow fadeInUpBig">
                     <div class="st__footer__copyright__link text-end">
                         <ul style="font-size:13px">
-                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalPlan" >Politique de confidentialité </a></li>
+                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalPlan" data-i18n="privacy_policy">Politique de confidentialité</a></li>
                             <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalMentions" data-i18n="ment_legal"></a></li>
                             <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalConditions" data-i18n="cond_util"></a></li>
-                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalConditions_vent"> Conditions de vente </a></li>
+                            <li><a class="footer_style" href="#" data-bs-toggle="modal" data-bs-target="#modalConditions_vent" data-i18n="sales_conditions">Conditions de vente</a></li>
                         </ul>
                     </div>
                 </div>
